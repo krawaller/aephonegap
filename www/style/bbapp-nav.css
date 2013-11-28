@@ -1,0 +1,166 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flips > .flipsection {
+	display: none;
+}
+.flips > .flipsection.active {
+	display: block;
+}
+
+
+
+
+
+.davidmodalcontent:after {
+	content: " ";
+	display: block;
+	height: 2em;
+}
+
+/*.davidmodalcontent:before {
+	content: " ";
+	display: block;
+	height: 5px;
+}*/
+
+body.portrait .fliptab:before {
+	position: absolute;
+	left: -4px;
+	bottom: 0;
+	content: " ";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 20px 4px;
+	border-color: transparent transparent #E7EDFF transparent;
+}
+
+body.portrait .fliptab:after {
+	position: absolute;
+	right: -4px;
+	bottom: 0;
+	content: " ";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 0 0 4px;
+	border-color: transparent transparent transparent #E7EDFF;
+}
+
+body.portrait .fliptab.active:before {
+	border-color: transparent transparent white transparent;
+}
+body.portrait .fliptab.active:after {
+	border-color: transparent transparent transparent white;
+}
+
+
+/********** NAV ************/
+
+.flipsection {
+	overflow-y: auto;
+}
+
+
+
+
+a.fliptab {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	float: left;
+	/*border: 1px solid #CCC;*/
+	font-size: 16px;
+	height: 25px;
+	position: relative;
+	/*bottom: 1px;*/
+	background-color: #E7EDFF;
+	margin-top: 5px;
+	position: relative;
+}
+
+a.fliptab span {
+	color: #888;
+}
+
+a.fliptab.active span {
+	color: #5d5d5d;
+}
+
+a.fliptab:hover {
+	text-decoration: none;
+}
+
+body.portrait .fliptab {
+	margin-right: 10px;
+	border-bottom: 0;
+	border-radius: 5px 5px 0 0;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+body.landscape .fliptab {
+	float: left;
+	border-radius: 0 5px 5px 0;
+	padding-right: 4px;
+	padding-left: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*
+body.landscape .fliptab.settingstab > span, body.landscape .fliptab.infotab > span {
+	-webkit-transform-origin: 50% 50%;
+    -moz-transform-origin:    50% 50%;
+    -ms-transform-origin:     50% 50%;
+    -o-transform-origin:      50% 50%;
+    transform-origin: 50% 50%;
+}
+*/
+
+body.landscape .fliptab.active {
+	margin-left: -1px;
+	background-color: white;
+}
+
+body.portrait .fliptab.active {
+	margin-bottom: -1px;
+	bottom: 0;
+	background-color: white;
+}
+
+/*
+body.landscape .fliptab > span {
+	-webkit-transform-origin: 200% 200%;
+    -moz-transform-origin:    200% 200%;
+    -ms-transform-origin:     200% 200%;
+    -o-transform-origin:      200% 200%;
+    transform-origin: 200% 200%;
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform:    rotate(-90deg); 
+    -ms-transform:     rotate(-90deg); 
+    -o-transform:      rotate(-90deg); 
+    transform: rotate(-90deg);
+    display: inline-block;
+    width: 20px;
+}*/
+
+
+.mainnavsection {
+	display: none;
+}
+.mainnavsection.active {
+	display: inherit;
+}
+

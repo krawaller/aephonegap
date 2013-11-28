@@ -1,0 +1,54 @@
+.languageselect {
+	text-align: center;
+}
+
+.languageselect button {
+	display: block;
+	margin: 8em auto;
+}
+
+
+
+
+
+div.settingsec {
+	text-align: center;
+	display: block;
+	margin-bottom: 6px;
+}
+
+div.settingsgroup {
+	text-align: center;
+	width: 190px;
+	float: left;
+	margin: 4px;
+	padding: 4px;
+	background-color: #EEE;
+	border-radius: 4px;
+}
+
+div.settingsgroup div.btn-group {
+	margin: 0 auto;
+	display: block;
+	padding-bottom: 4px;
+}
+
+
+body.phone.portrait div.settings > div.settingsgroup {
+	float: inherit;
+	margin: 10px auto 0 auto;
+	width: auto;
+}
+body.phone.portrait div.settings > div.settingsgroup:first-child {
+	margin-top: 4px;
+}
+/*
+body.phone.landscape div.langgroup, body.phone.landscape div.backgroundcalcgroup {float:right;}
+body.phone.landscape div.textreportmodegroup {clear:left;}
+*/
+
+.confirmiconbtn > span {color: green;}
+.canceliconbtn > span {color: red;}
+
+.btn-group > button > span {opacity:0.5;}
+.btn-group > button.active > span {opacity:1;}

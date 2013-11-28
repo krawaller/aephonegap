@@ -1,0 +1,66 @@
+
+div.resultsection {
+	/*overflow-y: scroll;*/
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	overflow-x: hidden;
+	padding-right: 12px;
+}
+
+div.objcont {
+	display:inline-block;
+}
+
+
+body {padding: 0 !important;}
+div.main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+div.wrapper {overflow:hidden;}
+
+
+
+div.sequencecontainer {
+	position:absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+
+			/*************** SMALL **************/
+
+
+			/*********** SMALL PORTRAIT *********/
+
+
+
+
+
+
+
+			/*********** SMALL LANDSCAPE *********/
+
+
+
+
+/*body.phone.landscape div.parser {text-align: left;}  OBSOLETE? */
+
+
+
+
+
+
+/*************** LARGE ***************/
+
+
+
+/*********** LARGE LANDSCAPE *********/

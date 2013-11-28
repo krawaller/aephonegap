@@ -1,0 +1,48 @@
+.canfinishexplanation, .cannotfinishexplanation, .havefinishedexplanation, button.canfinishbutton, button.cannotfinishbutton, button.havefinishedbutton {display:none;}
+.canfinishlesson .canfinishexplanation, .canfinishlesson .canfinishbutton,
+.cannotfinishlesson .cannotfinishexplanation, .cannotfinishlesson .cannotfinishbutton,
+.havefinishedlesson .havefinishedexplanation, .havefinishedlesson .havefinishedbutton {display:block;}
+
+button.canfinishbutton, button.cannotfinishbutton, button.havefinishedbutton {
+	margin: 0 auto;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+/*.completedlesson {
+	text-decoration: line-through;
+}*/
+
+
+.lessonlink:hover > span {
+	text-decoration: none;
+}
+
+.lessonlink > span:hover {
+	text-decoration: none;
+}
+
+.schoolstart ul {
+	list-style-type: none;
+	padding-bottom: 2em;
+}
+
+.schoolstart ul li {
+	margin-bottom: 1em;
+	position: relative;
+}
+
+.schoolstart ul li:before {
+	content: " ";
+	display: inline-block;
+	position: absolute;
+	left: -19px;
+	top: 5px;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+}
+
+.schoolstart ul li.redexplanation:before {background-color: #A80F07;}
+.schoolstart ul li.yellowexplanation:before {background-color: #FFDD00;}
+.schoolstart ul li.greenexplanation:before {background-color: #22A807;}

@@ -1,0 +1,1 @@
+(function(){CATS.bb.InfoView=CATS.bb.LookupView.extend({localizeid:"info",initialize:function(o){this.indexview=new CATS.bb.InfoIndexView;this.itemview=new CATS.bb.InfoItemView;return this.constructor.__super__.initialize.apply(this,[o])}})}).call(this);

@@ -1,0 +1,1 @@
+(function(){CATS.bb.ToolboxRootView=CATS.bb.RootView.extend({render:function(){this.$el.append((new CATS.bb.ToolIndexView).render().el);return this}})}).call(this);

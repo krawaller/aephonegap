@@ -1,0 +1,203 @@
+body.large .firstresult {
+	margin-top: 3em;
+}
+
+.rownum>span {
+	font-size: 0.75em;
+	color: #ccc;
+}
+
+.becausecontainer {
+	padding-top: 0.3em;
+	max-width: 450px;
+}
+
+.substepsintro, .summary, .loadindicator {
+	font-size: 0.85em;
+	text-align: center;
+}
+
+.loadindicator {
+	color: #CCC;
+	padding: 1em;
+}
+div.firstresultcontainer {
+	background-color: #F7F7FF;
+}
+
+.firstresult {
+	text-align: center;
+}
+
+body.usingq .sequence .qheadline {
+	display: none;
+}
+
+.toolnamecontainer {
+	text-align: center;
+	padding: 0.4em 0;
+}
+
+.substepsintro {
+	margin: 1.5em 0;
+}
+
+.substeps .substep {
+	margin: 0;
+}
+
+.master .firstresult .toggler {display: none;}
+
+.substeps {
+	margin-top: 1.5em;
+	padding-bottom: 3.5em;
+	text-align: center;
+}
+
+.substep {
+	text-align: left;
+	display: inline-block;
+	border: 1px solid #999;
+	border-radius: 7px;
+	padding: 0.5em 0.8em;
+	min-width: 30px;
+	max-width: 93%;
+	background-color: white;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.opbreaker {
+	width: 100%;
+}
+
+.opbreaker > div {
+	width: 50%;
+	height: 3em;
+	border-right: 1px solid #999;
+	margin-top: -1em;
+}
+
+.firstresultcontainer button.toggler { display: none; }
+
+.toggler > span {
+	top: -1px;
+	left: -3px;
+}
+
+.toggler {
+	margin-top: -5px;
+	width: 2em;
+	/*position: absolute;*/
+}
+
+body .toggleonbutton {display: none;}
+.collapsed .toggleonbutton { display: inline-block; }
+.collapsed .toggleoffbutton { display: none; }
+
+.collapsed .toolnamecontainer,
+.collapsed .becausecontainer,
+div.collapsed div.buttonstepsbelowcontainer,
+.collapsed .opsection {
+	display: none;
+}
+
+
+div.afternomarkcontainer {display:none;}
+
+.collapsed .afternomarkcontainer {
+	display: inline-block;
+	width: inherit;
+}
+
+.collapsed > div {
+	text-align: center;
+}
+
+.collapsed .rownum {
+	float: none;
+}
+
+.collapsed .optop {
+	margin-bottom: 0;
+}
+
+.afternomarkcontainer, .startcontainer {
+	padding-top: 0.4em;
+}
+
+.optop {
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+.optop .rownum { float: none;}
+
+/*.firstsubstep {
+	margin-top: 1.4em;
+}*/
+
+/************************ O P E R A T I O N    V I E W *****************************/
+
+.opsection {
+	display: table;
+	width: 100%;
+}
+
+.opcontainer {
+	position: relative;
+	display: table-row;
+}
+
+.oppartcontainer {
+	display: table-cell;
+	width: 43%;
+	vertical-align: middle;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.oppartcontainer > div {
+	display: inline-block;
+}
+
+.arrow {
+	display: table-cell;
+	width: 12%;
+	text-align:center;
+	color: #555;
+	vertical-align: middle;
+}
+
+.buttonback {
+	position: relative;
+	top: -2px;
+}
+
+.beforecontainer > div {
+	float:right;
+}
+
+.aftercontainer > div {
+	float:left;
+}
+
+
+
+
+div.buttonstepsbelowcontainer {
+	clear: both;
+}
+
+button.buttonstepsbelow {
+	margin: 0 auto;
+	margin-top: 0.5em;
+}
+
+
+body.phone.portrait span.buttonbacktext {display:none;}
+
+.hidestepexplanations .becausecontainer {
+	display: none;
+}
+

@@ -1,0 +1,1 @@
+(function(){CATS.bb.CalcView=CATS.bb.RootView.extend({localizeid:"calc",className:"calcview inputmode",initialize:function(o){console.log("CALC INITIALIZE");return this.constructor.__super__.initialize.apply(this,[o])},render:function(){this.parserview=new CATS.bb.ParserView;this.$el.append(this.parserview.render().el);return this}})}).call(this);

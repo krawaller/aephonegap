@@ -1,0 +1,1 @@
+(function(){CATS.bb.stepseparatorview=CATS.bb.BaseView.extend({tagName:"span",className:"stepseparator",render:function(){this.$el.html("&rarr;");return this}})}).call(this);

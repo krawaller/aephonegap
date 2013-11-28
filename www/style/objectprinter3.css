@@ -1,0 +1,95 @@
+
+a.mathobj, a.mathobj:hover, a.mathobj:visited, a.mathobj:active {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.mathobj span.obj {
+	display: inline-block;
+	padding: 0;
+	border: 1px solid black;
+	margin-right: 2px;
+	background-color: rgba(150,150,150,0.5);
+	border-radius: 10px;
+	cursor: pointer;
+	float: left;
+}
+
+.mathobj .val {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.mathobj span.objs {
+	margin: 2px;
+	margin-right: 0;
+	display: block;
+}
+
+.mathobj .objs:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.mathobj .type {
+	display: block;
+	text-align: center;
+	color: white;
+	background-color: rgba(10,10,10,0.5);
+	font-size: 0.8em;
+}
+
+.mathobj .parent > .val {
+	display: none;
+}
+
+.mathobj .type {
+	font-style: italic;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-bottom: 0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	line-height: 1.4em;
+}
+
+.mathobj .parent > .type {
+	font-style: normal;
+	letter-spacing: 1px;
+}
+
+.mathobj .void .type {
+	color: white;
+	background-color: red;
+}
+
+.mathobj span.void, .mathobj span.void .val {
+	background-color: red;
+}
+
+.mathobj .markedobj {
+	border: 1px solid green;
+	background-color: rgba(0,150,150,0.5);
+
+}
+
+.mathobj span.markme > .type {
+	background-color: darkred;
+}
+
+.mathobj .markme {
+	border-color: red;
+}
+
+.mathobj span.markpart > .type {
+	background-color: darkblue;
+}
+
+.mathobj .markpart {
+	border-color: blue;
+}

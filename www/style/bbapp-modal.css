@@ -1,0 +1,306 @@
+.davidlink.nolink, .davidlink.nolink:hover {
+	color: white;
+	background-color: inherit;
+	cursor: inherit;
+}
+
+button.buttonpreviousmodal {
+	right: -60px;
+	-webkit-transition: right 0.3s ease-in-out;
+	-moz-transition: right 0.3s ease-in-out;
+	-o-transition: right 0.3s ease-in-out;
+	transition: right 0.3s ease-in-out;
+	position:absolute;
+}
+
+.showprevmodalbtn button.buttonpreviousmodal {
+	-webkit-transition: right 0.3s ease-in-out;
+	-moz-transition: right 0.3s ease-in-out;
+	-o-transition: right 0.3s ease-in-out;
+	transition: right 0.3s ease-in-out;
+	right: 4px;
+}
+
+
+div.buttonmodalheadleftpanel {
+	position: absolute;
+	-webkit-transition: top 0.3s ease-in-out;
+	-moz-transition: top 0.3s ease-in-out;
+	-o-transition: top 0.3s ease-in-out;
+	transition: top 0.3s ease-in-out;
+	top: -50px;
+	left: 50px;
+}
+body.phone.landscape div.buttonmodalheadleftpanel {
+	left: 69px;
+}
+
+div.buttonmodalheadrightpanel {
+	position: absolute;
+	-webkit-transition: top 0.3s ease-in-out, right 0.3s ease-in-out;
+	-moz-transition: top 0.3s ease-in-out, right 0.3s ease-in-out;
+	-o-transition: top 0.3s ease-in-out, right 0.3s ease-in-out;
+	transition: top 0.3s ease-in-out, right 0.3s ease-in-out;
+	top: -50px;
+	right: 3px;
+}
+
+.showprevmodalbtn .buttonmodalheadrightpanel {
+	right: 64px;	
+}
+
+body.phone.landscape .showprevmodalbtn div.buttonmodalheadrightpanel {
+	right: 51px;
+}
+
+
+.showingmodalindex.navleft .buttonmodalheadleftpanel,
+.showingmodalindex.navright .buttonmodalheadrightpanel {
+	-webkit-transition: top 0.3s ease-in-out;
+	-moz-transition: top 0.3s ease-in-out;
+	-o-transition: top 0.3s ease-in-out;
+	transition: top 0.3s ease-in-out;
+	top: 3px;
+}
+
+body.phone.portrait .buttonmodalheadleftpanel,
+body.phone.portrait .buttonmodalheadrightpanel {
+	display: none;
+}
+
+.modalnavpanel {
+	display: none;
+	background-color: #F9F9F9;
+	height: 30px;
+	width: 36px;
+	position: fixed;
+	z-index: 10;
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	bottom: 0;
+}
+
+body.phone.portrait .modalnavpanel { display: block; }
+
+.modalleftpanel {
+	border-top-right-radius: 5px;
+	border-left: none;
+	-webkit-transition: left 0.3s ease-in-out;
+	-moz-transition: left 0.3s ease-in-out;
+	-o-transition: left 0.3s ease-in-out;
+	transition: left 0.3s ease-in-out;
+	left: -44px;
+}
+
+.modalrightpanel {
+	border-top-left-radius: 5px;
+	border-right: none;
+	-webkit-transition: right 0.3s ease-in-out;
+	-moz-transition: right 0.3s ease-in-out;
+	-o-transition: right 0.3s ease-in-out;
+	transition: right 0.3s ease-in-out;
+	right: -44px;
+}
+
+.showingmodalindex.navleft .modalleftpanel {
+	-webkit-transition: left 0.3s ease-in-out;
+	-moz-transition: left 0.3s ease-in-out;
+	-o-transition: left 0.3s ease-in-out;
+	transition: left 0.3s ease-in-out;
+	left: 0px;
+}
+.showingmodalindex.navright .modalrightpanel {
+	-webkit-transition: right 0.3s ease-in-out;
+	-moz-transition: right 0.3s ease-in-out;
+	-o-transition: right 0.3s ease-in-out;
+	transition: right 0.3s ease-in-out;
+	right: 0px;
+}
+
+.modalnavpanel button {
+	position: relative;
+	top: 3px;
+	left: 3px;
+}
+
+body.phone.portrait .showingmodalindex .lookupitem > * {
+	padding-bottom: 5em; /* to account for backbuttons being shown down below! :) */
+}
+
+/****.phone landscape fixes ****/
+
+body.phone.landscape .davidmodalheader button { /* stolen from TB btn-mini class */
+	padding: 1px 6px;
+	font-size: 10.5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+body.phone.landscape .buttonmodalindex {
+	left: 36px;
+}
+body.phone.landscape .buttonmodaheadleft {
+	left: 66px;
+}
+body.phone.landscape .buttonmodaheadright {
+	left: 96px;
+}
+
+body.phone.landscape .modalheadline {
+	font-size: 1.1em;
+	margin-top: 2px;
+}
+
+body.phone.landscape .davidmodalheader {
+	height: 25px;
+}
+
+body.phone.landscape .davidmodalbody {
+	top: 32px;
+}
+
+body.phone.landscape .davidmodal {
+	top: 1px;
+	bottom: 3px;
+}
+
+/************************ M O D A L   R E A D E R *****************************/
+
+button.buttonmodalindex {
+	/*-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	-webkit-transform: scale3d(0, 0, 0);*/
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+
+div.showingmodalindex button.buttonmodalindex {
+	/*-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	-webkit-transform: scale3d(1, 1, 1);*/
+	opacity: 1;
+	-webkit-transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+
+
+
+div.davidmodal {
+	overflow: hidden;
+	position: absolute;
+	bottom: 4%;
+	top: 4%;
+	left: 4%;
+	right: 4%;
+	border-radius: 4px;
+	border: 1px solid #AAA;
+	z-index: 1050;
+	background-color: #FFF;
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	-webkit-transform: scale3d(0, 0, 0);
+	-moz-transition: -moz-transform 0.3s ease-in-out;
+	-moz-transform: scale3d(0, 0, 0);
+	-o-transition: -o-transform 0.3s ease-in-out;
+	-o-transform: scale3d(0, 0, 0);
+	transition: transform 0.3s ease-in-out;
+	transform: scale3d(0, 0, 0);
+}
+
+body.showingdavidmodal div.davidmodal {
+	display: inherit;
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	-webkit-transform: scale3d(1, 1, 1);
+	-moz-transition: -moz-transform 0.3s ease-in-out;
+	-moz-transform: scale3d(1, 1, 1);
+	-o-transition: -o-transform 0.3s ease-in-out;
+	-o-transform: scale3d(1, 1, 1);
+	transition: transform 0.3s ease-in-out;
+	transform: scale3d(1, 1, 1);
+}
+
+div.davidmodalbackdrop{
+	background-color: #000;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	-webkit-transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+
+body.showingdavidmodal div.davidmodalbackdrop {
+	opacity: 0.7;
+	-webkit-transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+
+div.davidmodalheader {
+	border-bottom: 1px solid #BBB;
+	background-color: #F9F9F9;
+	height: 30px;
+	padding: 3px;
+}
+
+div.davidmodalbody{
+	overflow: hidden;
+	position: absolute;
+	top: 37px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+	margin: 0;
+}
+
+button.modalcloser { position:absolute; }
+
+h4.modalheadline {
+	margin: 5px;
+	text-align: center;
+}
+
+h4.modalheadline > i {
+	margin-right: 5px;
+	margin-top: 3px;
+}
+
+div.davidmodalcontent {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 6px;
+	position: absolute;
+}
+
+body.showingdavidmodal div.davidmodalcontent {
+	overflow-y:auto;
+	-webkit-overflow-scrolling: touch;
+	-moz-overflow-scrolling: touch;
+	-o-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+	overflow-x:hidden;
+}
+
+button.buttonmodalindex {
+	position: absolute;
+	left: 47px;
+}
+
+
+			/*************** LARGE ***************/
+
+
+body.large button.buttonmodalindex {top:-500px;}

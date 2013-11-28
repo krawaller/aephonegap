@@ -1,0 +1,1 @@
+(function(){CATS.bb.ToolboxView=CATS.bb.LookupView.extend({localizeid:"toolbox",columns:true,initialize:function(o){this.indexview=new CATS.bb.ToolIndexView;this.itemview=new CATS.bb.ToolinfoView;return this.constructor.__super__.initialize.apply(this,[o])}})}).call(this);

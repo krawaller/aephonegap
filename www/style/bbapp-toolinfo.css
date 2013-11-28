@@ -1,0 +1,138 @@
+.toolfilter button {
+min-width: 38px;
+}
+
+
+button.schoolbutton {
+	display: none;
+	margin: 0 auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.instructionholder {
+	padding-top: 2em;
+}
+
+.toolinfoyellow .learnbutton, .toolinfogreen .forgetbutton, .toolinfored .cannotlearnbutton {
+	display: block;
+}
+
+.canlearninstruction {
+	display: none;
+}
+
+.toolinfoyellow .canlearninstruction {
+	display: block;
+}
+
+.toolfilter {
+	text-align: center;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.toolfilter .rownum {
+	float: none;
+	margin-right: 1em;
+}
+
+body.phone.landscape .toolinfo .btn-group {
+	margin-top: -8px;
+}
+
+.toolinfo .btn-group button {
+	width: 90px;
+}
+
+.explanationparagraph {
+	margin-bottom: 1.5em;
+}
+
+body.phone .explanationsection .linksection, body.phone .explanationsection .schoolsection,
+body.phone .linksection .explanationsection, body.phone .linksection .schoolsection,
+body.phone .schoolsection .explanationsection, body.phone .schoolsection .linksection,
+body.large .toolinfo .btn-group,
+body.phone .explanationheadline {
+	display: none;
+}
+
+body.phone .explanationsection .explanationsection {
+	margin-top: 1em;
+}
+
+button.buttonexample {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+.toolinfo .oppartcontainer {
+	padding-top: 0;
+}
+
+.toolinfo .arrow {
+	padding-bottom: 1em;
+}
+
+.toolexplanation {
+	display: table;
+	width: 100%;
+}
+
+.toolexplanation > div {
+	display: table-row;
+	position: relative;
+}
+
+.toolexplanation > div > div {
+	display: table-cell;
+	width: 50%;
+	padding: 2px;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+
+.returnsparagraph, .targetsparagraph {
+	text-transform: lowercase;
+}
+
+.toolexampletext {
+	background-color: #E7EDFF;
+	border-radius: 9px;
+	position: relative;
+	border: 1px solid #AAA;
+	margin-bottom: 2em;
+	padding: 3px 0.5em;
+	font-weight: normal;
+}
+
+.toolexampletext:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 25px 5px 0 5px;
+	display: block;
+	width: 0;
+	z-index: 1;
+	border-color: #AAA transparent;
+	bottom: -25px;
+	left: 53%;
+}
+
+.toolexampletext:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 25px 5px 0 5px;
+	display: block;
+	width: 0;
+	z-index: 1;
+	bottom: -20px;
+	border-color: #E7EDFF transparent;
+	left: 53%;
+}
+
+.toolexplanation > div > div:nth-child(1) > .toolexampletext:after {left:42%;}
+.toolexplanation > div > div:nth-child(1) > .toolexampletext:before {left:42%;}

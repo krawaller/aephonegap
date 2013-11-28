@@ -1,0 +1,1 @@
+(function(){CATS.bb.HomeView=CATS.bb.FlipView.extend({localizeid:"home",className:"homeview",initialize:function(o){console.log("HOME INITIALIZE");this.constructor.__super__.initialize.apply(this,[o]);return this.setup({welcome:CATS.bb.WelcomeView,settings:CATS.bb.SettingsView,info:CATS.bb.InfoBothView})}})}).call(this);
