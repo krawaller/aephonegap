@@ -130,7 +130,7 @@ This refers to the pill-shaped link to a word/operation/lesson/infopage that can
 div.davidlist {text-align: center;} /* davidlinks are (always?) found insides divs with class .davidlist */
 
 
-       /* ------------------- Tool link special bits ----------------- */
+   /* ------------------- Tool link special bits ------------------------------------------------ */
 
 
 .toollink {position:relative; padding-right:22px;} /* To accommodate for the red/green/yellow marker to the far right of tool links */
@@ -148,7 +148,7 @@ div.davidlist {text-align: center;} /* davidlinks are (always?) found insides di
 .toollink.red:after {background-color: #A80F07;}
 .toollink.yellow:after {background-color: #FFDD00;}
 
-       /* ------------------- Lesson link special bits ----------------- */
+    /* ------------------- Lesson link special bits ------------------------------------------------ */
 
 .redcount, .yellowcount, .greencount { /* The round colour operation counts found to the far right of each lesson link (see the school tab) */
 	font-size: 0.9em;
@@ -167,3 +167,156 @@ div.davidlist {text-align: center;} /* davidlinks are (always?) found insides di
 
 .completedlesson .redcount, .completedlesson .yellowcount {display: none;} /* only show number of green (completed) operations in a completed lesson */
 a > .completedlesson {color:#555;text-decoration:line-through;} /* wash out name of completed lesson in a link*/
+
+
+
+/*
+
+
+	N A V I G A T I O N   T A B S
+
+Tabs will look different depending if the body tag has the .phone or the .large class
+Tabs will be bottom or left depending if the body tag has the .portrait or the .landscape class
+
+*/
+
+
+	/* ------------------- Control positions depending on screen size/orientation ------------------------------------------ */
+
+.controlpanel { /* the div containing the tabs */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;	
+	z-index: 1;
+	background-color: #C7D3FF
+}
+body.portrait .controlpanel {right: 0;}
+body.landscape .controlpanel {top: 0;}
+body.phone.portrait .controlpanel {
+	height: 42px;
+	padding-left: 10px;
+}
+body.phone.landscape .controlpanel{
+	padding-top: 5px;
+	width: 42px;
+}
+body.large.portrait .controlpanel {
+	height: 100px;
+}
+body.large.landscape .controlpanel {
+	width: 100px;
+}
+body.phone.landscape .wrapper {left: 42px;}
+body.phone.portrait .wrapper {bottom: 42px;}
+body.large.portrait .wrapper {bottom: 100px;}
+body.large.landscape .wrapper {left: 100px;}
+
+	/* --------------------------------------------- Tab look ------------------------------------------------- */
+
+.tab {
+	height: 35px;
+	width: 50px;
+	text-align: center;
+	background-color: #E7EDFF;
+	position: relative;
+	display: block;
+	font-size: 20px;
+}
+
+.tab > span {
+	color: #888;
+	padding: 5px;
+	margin-top: 2px;
+	display: inline-block;
+}
+
+
+body.landscape .tab {
+	margin-bottom: 5px;
+	border-radius: 10px 0 0 10px;
+}
+
+body.portrait .tab {
+	margin-right: 5px;
+	border-radius: 0 0 10px 10px;
+}
+
+
+body.portrait .tab:before {
+	position: absolute;
+	left: -6px;
+	top: 0;
+	content: " ";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 6px 30px 0;
+	border-color: transparent #E7EDFF transparent transparent;
+}
+body.portrait .tab:after {
+	position: absolute;
+	right: -6px;
+	top: 0;
+	content: " ";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px 6px 0 0;
+	border-color: #E7EDFF transparent transparent transparent;
+}
+
+body.phone .tab {
+	padding: 0;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+body.portrait .tab {
+	margin-right: 10px;
+	margin-left: 0;
+	float: left;
+}
+
+body.portrait .tab:last-child {
+	margin-right: 0;
+}
+
+body.landscape .tab {
+	padding-right: 0;
+	float: right;
+	clear: right;
+}
+
+body.large.landscape .tab {
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+body.large.portrait .tab {
+	margin-right: 6px;
+	width: 80px;
+}
+
+/* -----------------------------------------Active Tab look ------------------------------------------------- */
+
+.tab.active {
+	background-color: white;
+}
+
+.tab.active > span {
+	color: #5d5d5d;
+}
+
+body.portrait .tab.active:before {
+	border-color: transparent white transparent transparent;
+	z-index: 2;
+}
+
+body.portrait .tab.active:after {
+	border-color: white transparent transparent transparent;
+	z-index: 2;
+}
+
+body.landscape .tab.active {margin-right: -1px;}
+body.portrait .tab.active {margin-top: -1px;}

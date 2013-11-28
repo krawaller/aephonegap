@@ -1,122 +1,15 @@
 
 /********** CONTROL POSITIONS AND SIZES ************/
 
-body.phone.landscape .wrapper {left: 42px;}
-body.phone.portrait .wrapper {bottom: 42px;}
-body.large.portrait .wrapper {bottom: 100px;}
-body.large.landscape .wrapper {left: 100px;}
-
-body.phone.portrait .controlpanel {
-	right: 0;
-	height: 42px;
-	padding-left: 10px;
-}
-body.phone.landscape .controlpanel{
-	padding-top: 5px;
-	width: 42px;
-}
-body.large.portrait .controlpanel {
-	height: 100px;
-}
-body.large.landscape .controlpanel {
-	width: 100px;
-}
-
-body.portrait .controlpanel {right: 0;}
-body.landscape .controlpanel {top: 0;}
 
 
-.controlpanel {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	text-align: center;	
-	z-index: 1;
-	background-color: #C7D3FF
-}
+
+
+
 
 
 /************ TABS LOOK *********************/
 
-
-body.portrait .tab:before {
-	position: absolute;
-	left: -6px;
-	top: 0;
-	content: " ";
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 6px 30px 0;
-	border-color: transparent #E7EDFF transparent transparent;
-}
-body.portrait .tab:after {
-	position: absolute;
-	right: -6px;
-	top: 0;
-	content: " ";
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 30px 6px 0 0;
-	border-color: #E7EDFF transparent transparent transparent;
-}
-
-body.portrait .tab.active:before {
-	border-color: transparent white transparent transparent;
-	z-index: 2;
-}
-
-body.portrait .tab.active:after {
-	border-color: white transparent transparent transparent;
-	z-index: 2;
-}
-
-.tab {
-	height: 35px;
-	width: 45px;
-	text-align: center;
-	/*border: 1px solid #CCC;*/
-	background-color: #E7EDFF;
-	position: relative;
-	display: block;
-	font-size: 20px;
-}
-
-.tab > span {
-	color: #888;
-	padding: 5px;
-	margin-top: 2px;
-	display: inline-block;
-}
-
-.tab.active {
-	background-color: white;
-}
-
-.tab.active > span {
-	color: #5d5d5d;
-}
-
-body.landscape .tab {
-	margin-bottom: 5px;
-	/*border-left: 0;*/
-	border-radius: 10px 0 0 10px;
-}
-
-body.portrait .tab {
-	margin-right: 5px;
-	/*border-top: 0;*/
-	border-radius: 0 0 10px 10px;
-}
-
-body.landscape .tab.active {
-	margin-right: -1px;
-}
-
-body.portrait .tab.active {
-	margin-top: -1px;
-}
 
 
 
@@ -139,36 +32,8 @@ body.phone .controlbuttontext {
 }
 
 
-body.phone .tab {
-	padding: 0;
-	text-align: center;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-body.portrait .tab {
-	margin-right: 10px;
-	margin-left: 0;
-	float: left;
-}
 
-body.portrait .tab:last-child {
-	margin-right: 0;
-}
 
-body.landscape .tab {
-	padding-right: 0;
-	float: right;
-	width: 30px;
-}
-
-body.large.landscape .tab {
-	margin: 1em;
-}
-
-body.large.portrait .tab {
-	margin-right: 6px;
-	width: 80px;
-}
 
 
 
