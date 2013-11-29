@@ -51,11 +51,13 @@ All have class .indexedheadline. Used on top of every single view. Must have pad
 	position: absolute;
 	font-family: 'Glyphicons Regular';
 	content: "?";
-	top: -1px;
+	top: -2px;
 	left: 5px;
-	font-size: 20px;
+	font-size: 24px;
 	color: white;
 	text-decoration: none;
+	text-align: center;
+	width: 32px;
 }
 
 /*
