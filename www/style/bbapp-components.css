@@ -1,5 +1,6 @@
 
-/*
+/**************************************************************************************************************
+***************************************************************************************************************
 
      T O P   H E A D L I N E
 
@@ -41,31 +42,37 @@ All have class .indexedheadline. Used on top of every single view. Must have pad
 	font-family: 'Glyphicons Regular';
 	content: "\E211"; /* left arrow icon */
 	top: 2px;
-	left: 5px;
+	left: 0;
 	z-index: 100;
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
+	text-align: left;
+	padding-left: 5px;
+	width: 50px; /* Bigger width than needed to make bigger hitboxes, which means easier to click */
 }
 .helpbutton:before {  /* The help button found to the far left inside the top header of root views */
 	position: absolute;
 	font-family: 'Glyphicons Regular';
 	content: "?";
-	top: -2px;
-	left: 5px;
+	top: -4px;
+	left: 0;
 	font-size: 24px;
 	color: white;
 	text-decoration: none;
-	text-align: center;
-	width: 32px;
+	text-align: left;
+	padding-left: 8px;
+	width: 50px; /* Bigger width than needed to make bigger hitboxes, which means easier to click */
 }
 
-/*
+/**************************************************************************************************************
+***************************************************************************************************************
 
      R O W N U M B E R   S U B H E A D E R
 
-The small headline used inside boxes, for example the one saying "Analysis" on the main calc page. Also used for actual rownumbers in calculation results,
-and a few other places. All have the .rownum class.
+These are the small headline used inside boxes, for example the one saying "Analysis" on the main calc page.
+The name rownum is just for historical reasons. Also used for actual rownumbers in calculation results, and
+a few other places. All have the .rownum class.
 
 */
 
@@ -83,7 +90,8 @@ and a few other places. All have the .rownum class.
 }
 
 
-/*
+/**************************************************************************************************************
+***************************************************************************************************************
 
     S U B   H E A D E R   I N S I D E   V I E W S
 
@@ -103,11 +111,13 @@ h5.nav-header {
 	margin-left: 2em;
 }
 
-/*
+/**************************************************************************************************************
+***************************************************************************************************************
 
     P I L L   L I N K
 
-This refers to the pill-shaped link to a word/operation/lesson/infopage that can be found throughout the app. They are all a tags, and all have the class .davidlink.
+This refers to the pill-shaped link to a word/operation/lesson/infopage that can be found throughout the app.
+They are all anchor tags, and all have the class .davidlink.
 
 */
 
@@ -172,8 +182,8 @@ a > .completedlesson {color:#555;text-decoration:line-through;} /* wash out name
 
 
 
-/*
-
+/**************************************************************************************************************
+***************************************************************************************************************
 
 	N A V I G A T I O N   T A B S
 
