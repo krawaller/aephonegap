@@ -1,1 +1,0 @@
-(function(){CATS.bb.GlossaryRootView=CATS.bb.RootView.extend({render:function(){this.$el.append((new CATS.bb.WordIndexView).render().el);return this}})}).call(this);

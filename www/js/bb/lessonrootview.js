@@ -1,1 +1,0 @@
-(function(){CATS.bb.LessonRootView=CATS.bb.RootView.extend({render:function(){this.$el.append((new CATS.bb.LessonListView).render().el);return this}})}).call(this);
