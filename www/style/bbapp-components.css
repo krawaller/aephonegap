@@ -51,18 +51,23 @@ All have class .indexedheadline. Used on top of every single view. Must have pad
 	padding-left: 5px;
 	width: 50px; /* Bigger width than needed to make bigger hitboxes, which means easier to click */
 }
-.helpbutton:before {  /* The help button found to the far left inside the top header of root views */
+
+.viewhelpbutton {  /* The help button found on the bottom right of all views */
 	position: absolute;
 	font-family: 'Glyphicons Regular';
-	content: "?";
-	top: -4px;
-	left: 0;
+	bottom: 15px;
+	right: 0;
 	font-size: 24px;
-	color: white;
+	color: black;
 	text-decoration: none;
-	text-align: left;
+	text-align: center;
 	padding-left: 8px;
-	width: 50px; /* Bigger width than needed to make bigger hitboxes, which means easier to click */
+	height: 30px;
+	display: block;
+}
+.viewhelpbutton:before {
+	content: "\E195"; /* question mark */
+	padding-right: 10px;
 }
 
 /**************************************************************************************************************
