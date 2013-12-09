@@ -4,7 +4,7 @@
 
      T O P   H E A D L I N E
 
-All have class .indexedheadline. Used on top of every single view. Must have padding to the left to accommodate for eventual back arrow. 
+All have class .indexedheadline. Used on top of every single view.
 
 */
 
@@ -150,8 +150,8 @@ div.davidlist {text-align: center;} /* davidlinks are (always?) found insides di
    /* ------------------- Tool link special bits ------------------------------------------------ */
 
 
-.toollink {position:relative; padding-right:22px;} /* To accommodate for the red/green/yellow marker to the far right of tool links */
-.toollink:after { /* The round marked after a toollink */
+.toollink, .lessonlink {position:relative; padding-right:22px;} /* To accommodate for the red/green/yellow marker to the far right of tool links */
+.toollink:after, .lessonlink:after { /* The round marked after a toollink */
 	display: inline-block;
 	height: 14px;
 	width: 14px;
@@ -161,13 +161,13 @@ div.davidlist {text-align: center;} /* davidlinks are (always?) found insides di
 	border-radius: 7px;
 	content: " ";
 }
-.toollink.green:after {background-color: #22A807;}
-.toollink.red:after {background-color: #A80F07;}
-.toollink.yellow:after {background-color: #FFDD00;}
+.toollink.green:after, .lessonlink.green:after {background-color: #29D107;}
+.toollink.red:after, .lessonlink.red:after {background-color: #F11308;}
+.toollink.yellow:after, .lessonlink.yellow:after {background-color: #FFDD00;}
 
     /* ------------------- Lesson link special bits ------------------------------------------------ */
 
-.redcount, .yellowcount, .greencount { /* The round colour operation counts found to the far right of each lesson link (see the school tab) */
+/*.redcount, .yellowcount, .greencount {
 	font-size: 0.9em;
 	padding-left: 4px;
 	padding-right: 4px;
@@ -178,12 +178,48 @@ div.davidlist {text-align: center;} /* davidlinks are (always?) found insides di
 	min-width: 15px;
 	text-decoration: none;
 }
-.greencount {background-color: #22A807;}
-.redcount {background-color: #A80F07;color:white;}
+.greencount {background-color: #29D107;}
+.redcount {background-color: #F11308;color:white;}
 .yellowcount {background-color: #FFDD00;}
 
-.completedlesson .redcount, .completedlesson .yellowcount {display: none;} /* only show number of green (completed) operations in a completed lesson */
-a > .completedlesson {color:#555;text-decoration:line-through;} /* wash out name of completed lesson in a link*/
+.completedlesson .redcount, .completedlesson .yellowcount {display: none;}
+a > .completedlesson {color:#555;text-decoration:line-through;}
+*/
+
+
+/**************************************************************************************************************
+***************************************************************************************************************
+
+	T R A F F I C   L I G H T S
+
+Shown on toolview and lessonview.
+
+*/
+
+.trafficlight {
+	text-align: center;
+	background-color: #444;
+	width: 20px;
+	height: 62px;
+	border-radius: 4px;
+	float: left;
+	margin-right: 10px;
+	padding-top: 2px;
+}
+.trafficlight > span {
+	width: 14px;
+	height: 14px;
+	border-radius: 7px;
+	display: inline-block;
+}
+
+.tredlamp {background-color:#4B0300;}
+.tyellowlamp {background-color:#625500;}
+.tgreenlamp {background-color:#0E5500;}
+
+.trafficlight.trafficred > .tredlamp {background-color:#F11308;box-shadow: 0 0 12px #F11308;}
+.trafficlight.trafficyellow > .tyellowlamp {background-color:#FFDD00;box-shadow: 0 0 12px #FFDD00;}
+.trafficlight.trafficgreen > .tgreenlamp {background-color:#29D107;box-shadow: 0 0 12px #29D107;}
 
 
 

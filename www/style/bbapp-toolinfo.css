@@ -2,28 +2,68 @@
 min-width: 38px;
 }
 
+.forgetconfirmbuttontext {
+	max-width: 250px;
+	white-space: normal;
+	display: block;
+}
+
+.forgetconfirmbutton {
+	position: relative;
+}
+
+.forgetmeter {
+	height: 4px;
+	background-color: #444;
+	margin: 4px auto;
+}
+
+@-webkit-keyframes shrink {
+	from {width: 100%;}
+	to {width: 1%;}
+}
+@-moz-keyframes shrink {
+	from {width: 100%;}
+	to {width: 1%;}
+}
+@-o-keyframes shrink {
+	from {width: 100%;}
+	to {width: 1%;}
+}
+@keyframes shrink {
+	from {width: 100%;}
+	to {width: 1%;}
+}
+
+.confirm .forgetmeter {
+	-webkit-animation: shrink 4s 0s 1 linear;
+	-moz-animation: shrink 4s 0s 1 linear;
+	animation: shrink 4s 0s 1 linear;
+}
 
 button.schoolbutton {
+	clear: both;
 	display: none;
 	margin: 0 auto;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
-.instructionholder {
-	padding-top: 2em;
+.instructionbox {
+	margin-top: 2em;
 }
 
-.toolinfoyellow .learnbutton, .toolinfogreen .forgetbutton, .toolinfored .cannotlearnbutton {
+.lessonbox .lessonlinkholder {
+	text-align: center;
+	margin-top: 2em;
+}
+
+.toolinfoyellow .learnbutton, .toolinfogreen .forgetbutton, .toolinfored .cannotlearnbutton, .confirm .forgetconfirmbutton {
 	display: block;
 }
 
-.canlearninstruction {
+.confirm .forgetbutton {
 	display: none;
-}
-
-.toolinfoyellow .canlearninstruction {
-	display: block;
 }
 
 .toolfilter {
