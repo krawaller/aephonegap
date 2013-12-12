@@ -1,3 +1,7 @@
+.toolinfo {
+	text-align: left;
+}
+
 .toolfilter button {
 min-width: 38px;
 }
@@ -92,8 +96,7 @@ body.phone.landscape .toolinfo .btn-group {
 body.phone .explanationsection .linksection, body.phone .explanationsection .schoolsection,
 body.phone .linksection .explanationsection, body.phone .linksection .schoolsection,
 body.phone .schoolsection .explanationsection, body.phone .schoolsection .linksection,
-body.large .toolinfo .btn-group,
-body.phone .explanationheadline {
+body.large .toolinfo .btn-group {
 	display: none;
 }
 
