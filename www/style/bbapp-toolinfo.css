@@ -70,9 +70,13 @@ button.schoolbutton {
 	display: none;
 }
 
+.toolindex > .viewcontent {
+	text-align: center;
+}
+
 .toolfilter {
 	text-align: center;
-	display: block;
+	display: inline-block;
 	margin-bottom: 10px;
 }
 
