@@ -130,7 +130,8 @@ They are all anchor tags, and all have the class .davidlink.
 	display: inline-block;
 	border-radius: 3px;
 	background-color: #E7EDFF;
-	padding: 0 3px;
+	border: 1px solid #C7D3FF;
+	padding: 0 2px;
 	color: #000;
 	text-decoration: none;
 	font-size: 0.9em;
@@ -150,14 +151,14 @@ div.davidlist {text-align: center;} /* davidlinks are (always?) found insides di
    /* ------------------- Tool link special bits ------------------------------------------------ */
 
 
-.toollink, .lessonlink {position:relative; padding-right:22px;} /* To accommodate for the red/green/yellow marker to the far right of tool links */
+.toollink, .lessonlink {position:relative; padding-right:17px;} /* To accommodate for the red/green/yellow marker to the far right of tool links */
 .toollink:after, .lessonlink:after { /* The round marked after a toollink */
-	display: inline-block;
-	height: 14px;
-	width: 14px;
+display: inline-block;
+	height: 10px;
+	width: 10px;
 	position: absolute;
-	right: 4px;
-	bottom: 2px;
+	right: 3px;
+	bottom: 4px;
 	border-radius: 7px;
 	content: " ";
 }
