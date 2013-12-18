@@ -183,3 +183,43 @@ button.buttonexample {
 
 .toolexplanation > div > div:nth-child(1) > .toolexampletext:after {left:42%;}
 .toolexplanation > div > div:nth-child(1) > .toolexampletext:before {left:42%;}
+
+
+/************************ T O O L   I N D E X ****************************************/
+
+/*
+.toollist .toolitem { display: none; }
+
+.showsimplifying .toolsimplifying,
+.showcondsimpl .toolcondsimpl,
+.showcomplicating .toolcomplicating,
+.showrephrasing .toolrephrasing,
+.showintegrity .toolintegrity,
+.showdecimalifying .tooldecimalifying {
+	display: inline-block;
+}
+
+.hidecomplex .toolcomplex,
+.hideatomic .toolatomic {
+	display: none;
+}*/
+
+.toolindex .btn-group {margin-bottom:4px;}
+
+.toggleboxbox .togglebox {display:none;}
+
+.toggleboxbox .showdecimalifyingbasic .togglebox.decimalifyingbasiclist,
+.toggleboxbox .showdecimalifyingcomplex .togglebox.decimalifyingcomplexlist,
+.toggleboxbox .showintegritycheckbasic .togglebox.integritycheckbasiclist,
+.toggleboxbox .showintegritycheckcomplex .togglebox.integritycheckcomplexlist,
+.toggleboxbox .showconditionallysimplifybasic .togglebox.conditionallysimplifybasiclist,
+.toggleboxbox .showconditionallysimplifycomplex .togglebox.conditionallysimplifycomplexlist,
+.toggleboxbox .showrephrasingbasic .togglebox.rephrasingbasiclist,
+.toggleboxbox .showrephrasingcomplex .togglebox.rephrasingcomplexlist,
+.toggleboxbox .showcomplicatingbasic .togglebox.complicatingbasiclist,
+.toggleboxbox .showcomplicatingcomplex .togglebox.complicatingcomplexlist,
+.toggleboxbox .showsimplifyingbasic .togglebox.simplifyingbasiclist,
+.toggleboxbox .showsimplifyingcomplex .togglebox.simplifyingcomplexlist {
+	display: block;
+}
+

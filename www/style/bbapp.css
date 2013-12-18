@@ -599,25 +599,6 @@ div.result {z-index:2;}
 /*.controlpanel { margin-bottom: 1em; }*/
 /* .large.landscape .controlpanel { float: right; } */
 
-/************************ T O O L   I N D E X ****************************************/
-
-
-.toollist .toolitem { display: none; }
-
-.showsimplifying .toolsimplifying,
-.showcondsimpl .toolcondsimpl,
-.showcomplicating .toolcomplicating,
-.showrephrasing .toolrephrasing,
-.showintegrity .toolintegrity,
-.showdecimalifying .tooldecimalifying {
-	display: inline-block;
-}
-
-.hidecomplex .toolcomplex,
-.hideatomic .toolatomic {
-	display: none;
-}
-.toolindex .btn-group {margin-bottom:4px;}
 
 /************************ T O O L   I N F O ****************************************/
 
