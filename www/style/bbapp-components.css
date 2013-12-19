@@ -110,10 +110,13 @@ h5.nav-header {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	color: #999;
-	margin-top: 2em;
-	font-size: 0.8em;
-	margin-bottom: 1.5em;
-	margin-left: 2em;
+	margin-top: 3em;
+	font-size: 0.85em;
+	margin-bottom: 2em;
+	margin-left: 1em;
+	margin-right: 4em;
+	border-bottom: 1px solid #999;
+	padding-left: 4em;
 }
 
 /**************************************************************************************************************
