@@ -1,3 +1,27 @@
+.helpitemview dt {
+	margin-left: 1em;
+}
+.helpitemview dd {
+	margin-left: 3.5em;
+	margin-right: 2em;
+	margin-bottom: 1em;
+}
+
+.redirectedfrom, .sectionexplanation {
+	font-size: 0.9em;
+	margin: 0 1em;
+	margin-bottom: 2em;
+}
+
+.helpitemview li {
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+.helpitemview p {
+	margin-bottom: 1em;
+}
+
 .toolinfo {
 	text-align: left;
 }
