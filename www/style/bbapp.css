@@ -1,3 +1,6 @@
+.hidehelpmode .hidehelpbutton, .hidehelpmode .viewhelpbutton, button.showhelpbutton {display:none;}
+.hidehelpmode .showhelpbutton {display:inline-block;}
+
 .worddescription .mathobj {
 	margin-bottom: 1em;
 	margin-top: 1em;
@@ -585,7 +588,7 @@ img.ambigram
 
 #MathJax_Message { margin-left: -10000% !important; }
 
-#hideout, #templates, #mathprerender { display: none;}
+#hideout, #templates, #mathprerender, #helptexts {display: none;}
 
 .btn-mini > i {
 	margin-top: -1px;
