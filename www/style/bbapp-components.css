@@ -117,6 +117,7 @@ h5.nav-header {
 	margin-right: 4em;
 	border-bottom: 1px solid #999;
 	padding-left: 4em;
+	text-align: left;
 }
 
 /**************************************************************************************************************
@@ -139,6 +140,7 @@ They are all anchor tags, and all have the class .davidlink.
 	text-decoration: none;
 	font-size: 0.9em;
 	margin: 3px;
+	min-width: 25px;
 }
 .davidlink:hover {
 	color: #000;

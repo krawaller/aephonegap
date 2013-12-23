@@ -1,3 +1,9 @@
+.writeinstruction .writeexample {
+	background-color: #EEE;
+	border-color: #CCC;
+	cursor: inherit;
+}
+
 .hidehelpmode .hidehelpbutton, .hidehelpmode .viewhelpbutton, button.showhelpbutton {display:none;}
 .hidehelpmode .showhelpbutton {display:inline-block;}
 
