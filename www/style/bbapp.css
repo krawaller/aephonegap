@@ -4,9 +4,6 @@
 	cursor: inherit;
 }
 
-.hidehelpmode .hidehelpbutton, .hidehelpmode .viewhelpbutton, button.showhelpbutton {display:none;}
-.hidehelpmode .showhelpbutton {display:inline-block;}
-
 .worddescription .mathobj {
 	margin-bottom: 1em;
 	margin-top: 1em;
@@ -44,6 +41,7 @@
 	padding: 12px;
 	padding-top: 1em;
 	padding-bottom: 3em;
+	background: white;
 }
 body.large .viewcontent {
 	padding: 2em;

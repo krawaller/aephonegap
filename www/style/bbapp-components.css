@@ -52,23 +52,34 @@ All have class .indexedheadline. Used on top of every single view.
 	width: 50px; /* Bigger width than needed to make bigger hitboxes, which means easier to click */
 }
 
-.viewhelpbutton {  /* The help button found on the bottom right of all views */
-	position: absolute;
-	font-family: 'Glyphicons Regular';
-	bottom: 15px;
-	right: 0;
-	font-size: 24px;
-	color: black;
-	text-decoration: none;
-	text-align: center;
-	padding-left: 8px;
-	height: 30px;
-	display: block;
+
+/**************************************************************************************************************
+***************************************************************************************************************
+
+     H E L P   S U M M A R Y
+
+This is the short help description that is displayed at the top of all views (unless turned off)
+
+*/
+
+
+.viewhelp {
+	background-color: #CCC;
+	margin-bottom: 2em;
+	border-radius: 6px;
+	font-size: 12px;
+	text-align: left;
+	padding: 4px;
 }
-.viewhelpbutton:before {
-	content: "\E195"; /* question mark */
-	padding-right: 10px;
+
+.viewhelp .helplink {
+	float: right;
+	margin-left: 10px;
 }
+
+.hidehelpmode .hidehelpbutton, .hidehelpmode .viewhelp, button.showhelpbutton {display:none;}
+.hidehelpmode .showhelpbutton {display:inline-block;}
+
 
 /**************************************************************************************************************
 ***************************************************************************************************************
@@ -161,8 +172,8 @@ div.davidlist { /* davidlinks are (always?) found insides divs with class .david
 
 
 .toollink, .lessonlink {position:relative; padding-right:17px;} /* To accommodate for the red/green/yellow marker to the far right of tool and lesson links */
-.toollink:after, .lessonlink:after {
-display: inline-block;
+.toollink:after, .lessonlink:after, .mark:after {
+	display: inline-block;
 	height: 10px;
 	width: 10px;
 	position: absolute;
@@ -171,9 +182,19 @@ display: inline-block;
 	border-radius: 7px;
 	content: " ";
 }
-.toollink.green:after, .lessonlink.green:after {background-color: #29D107;}
-.toollink.red:after, .lessonlink.red:after {background-color: #F11308;}
-.toollink.yellow:after, .lessonlink.yellow:after {background-color: #FFDD00;}
+.mark {
+	display:inline-block;
+	position: relative;
+	width: 10px;
+}
+.mark:after {
+	right:0;
+	bottom: 4px;
+}
+
+.toollink.green:after, .lessonlink.green:after, .mark.green:after {background-color: #29D107;}
+.toollink.red:after, .lessonlink.red:after, .mark.red:after {background-color: #F11308;}
+.toollink.yellow:after, .lessonlink.yellow:after, .mark.yellow:after {background-color: #FFDD00;}
 
 span.toollink:after, span.lessonlink:after {bottom:3px;}
 
