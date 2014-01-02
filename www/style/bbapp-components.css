@@ -26,13 +26,13 @@ All have class .indexedheadline. Used on top of every single view.
 	right: 4px;
 	top: 0;
 	font-size: 30px;
-	color: black;
+	color: #333;
 	text-shadow: 0 0 5px white;
 	position: absolute;
 }
 .indexedheadline.glossarycat:after {content: "\E072";} /* book icon */
 .indexedheadline.calccat:after {content: "\E324";} /* calculator icon */
-.indexedheadline.toolcat:after {content: "\1F527";} /* wrench icon */
+.indexedheadline.toolcat:after {content: "\E461";} /* blacksmith icon */
 .indexedheadline.infocat:after {content: "\E196";} /* infocircle icon */
 .indexedheadline.schoolcat:after {content: "\E333";} /* certificate icon */
 .indexedheadline.helpcat:after {content: "\E195";} /* help icon */
@@ -90,7 +90,7 @@ a few other places. All have the .rownum class.
 	background-color: #555;
 	border-radius: 10px;
 	min-width: 15px;
-	padding: 0 4px;
+	padding: 1px 6px;
 	text-align: center;
 }
 
@@ -135,7 +135,7 @@ They are all anchor tags, and all have the class .davidlink.
 	border-radius: 3px;
 	background-color: #E7EDFF;
 	border: 1px solid #C7D3FF;
-	padding: 0 2px;
+	padding: 2px 4px;
 	color: #000;
 	text-decoration: none;
 	font-size: 0.9em;
@@ -167,7 +167,7 @@ display: inline-block;
 	width: 10px;
 	position: absolute;
 	right: 3px;
-	bottom: 4px;
+	bottom: 6px;
 	border-radius: 7px;
 	content: " ";
 }
@@ -175,7 +175,7 @@ display: inline-block;
 .toollink.red:after, .lessonlink.red:after {background-color: #F11308;}
 .toollink.yellow:after, .lessonlink.yellow:after {background-color: #FFDD00;}
 
-
+span.toollink:after, span.lessonlink:after {bottom:3px;}
 
 /**************************************************************************************************************
 ***************************************************************************************************************
@@ -195,6 +195,7 @@ Shown on toolview and lessonview.
 	float: left;
 	margin-right: 10px;
 	padding-top: 2px;
+	font-size: 14px;
 }
 .trafficlight > span {
 	width: 14px;
@@ -240,8 +241,8 @@ body.phone.portrait .controlpanel {
 	height: 42px;
 	padding-left: 10px;
 }
-body.phone.landscape .controlpanel{
-	padding-top: 5px;
+body.landscape .controlpanel{
+	padding-top: 45px;
 	width: 42px;
 }
 body.large.portrait .controlpanel {

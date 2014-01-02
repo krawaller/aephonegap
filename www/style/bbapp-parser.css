@@ -81,7 +81,11 @@ body.large .parsersection .btns {
 	margin-top: 10px;
 }
 
-.text-error {text-shadow: #FFF 0 0 5px;}
+.text-error {
+	color: red;
+	text-shadow: #FFF 0 0 5px;
+	margin-top: 10px;
+}
 
 
 div.inputview {

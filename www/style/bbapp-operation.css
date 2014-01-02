@@ -9,7 +9,7 @@ body.large .firstresult {
 
 .becausecontainer {
 	padding-top: 0.3em;
-	max-width: 450px;
+	/*max-width: 450px;*/
 }
 
 .substepsintro, .summary, .loadindicator {
@@ -61,7 +61,7 @@ body.usingq .sequence .qheadline {
 	border-radius: 7px;
 	padding: 0.5em 0.8em;
 	min-width: 30px;
-	max-width: 93%;
+	max-width: 650px;
 	background-color: white;
 	overflow-x: auto;
 	overflow-y: hidden;
@@ -114,10 +114,6 @@ div.afternomarkcontainer {display:none;}
 	text-align: center;
 }
 
-.collapsed .rownum {
-	float: none;
-}
-
 .collapsed .optop {
 	margin-bottom: 0;
 }
@@ -130,8 +126,6 @@ div.afternomarkcontainer {display:none;}
 	text-align: center;
 	margin-bottom: 0.5em;
 }
-
-.optop .rownum { float: none;}
 
 /*.firstsubstep {
 	margin-top: 1.4em;

@@ -6,6 +6,9 @@
 	margin-right: 2em;
 	margin-bottom: 1em;
 }
+.helplist dd {
+	margin-left: 1em;
+}
 
 .redirectedfrom, .sectionexplanation {
 	font-size: 0.9em;
@@ -27,7 +30,8 @@
 }
 
 .toolfilter button {
-min-width: 38px;
+	min-width: 38px;
+	font-size: 0.8em;
 }
 
 .forgetconfirmbuttontext {
@@ -105,8 +109,8 @@ button.schoolbutton {
 }
 
 .toolfilter .rownum {
-	float: none;
-	margin-right: 1em;
+	margin-bottom: 10px;
+	display: inline-block;
 }
 
 body.phone.landscape .toolinfo .btn-group {
@@ -121,14 +125,13 @@ body.phone.landscape .toolinfo .btn-group {
 	margin-bottom: 1.5em;
 }
 
-body.phone .explanationsection .linksection, body.phone .explanationsection .schoolsection,
-body.phone .linksection .explanationsection, body.phone .linksection .schoolsection,
-body.phone .schoolsection .explanationsection, body.phone .schoolsection .linksection,
-body.large .toolinfo .btn-group {
+.explanationsection .linksection, .explanationsection .schoolsection,
+.linksection .explanationsection, .linksection .schoolsection,
+.schoolsection .explanationsection, .schoolsection .linksection {
 	display: none;
 }
 
-body.phone .explanationsection .explanationsection {
+.explanationsection .explanationsection {
 	margin-top: 1em;
 }
 
@@ -177,6 +180,8 @@ button.buttonexample {
 	margin-bottom: 2em;
 	padding: 3px 0.5em;
 	font-weight: normal;
+	display: inline-block;
+	max-width: 350px;
 }
 
 .toolexampletext:before {
