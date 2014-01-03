@@ -40,10 +40,9 @@ button.newcalcbutton {
 
 .parserview .firstresultcontainer {
 	text-align: center;
-	margin-top: 10px;
 }
 
- div.parsersection {
+div.parsersection {
 	position:absolute;
 	top:0;
 	left:0;
@@ -58,6 +57,7 @@ button.newcalcbutton {
 .parserinput {
 	position: relative;
 	margin-top: 10px;
+	margin-bottom: 1em;
 }
 
 body.large .parserinput {

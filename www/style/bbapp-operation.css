@@ -1,6 +1,4 @@
-body.large .firstresult {
-	margin-top: 3em;
-}
+
 
 .rownum>span {
 	font-size: 0.75em;
@@ -61,10 +59,14 @@ body.usingq .sequence .qheadline {
 	border-radius: 7px;
 	padding: 0.5em 0.8em;
 	min-width: 30px;
-	max-width: 650px;
+	max-width: 100%;
 	background-color: white;
-	overflow-x: auto;
+	overflow-x: hidden;
 	overflow-y: hidden;
+}
+.oprest {
+	overflow-x: auto;
+	max-width: 650px;
 }
 
 .opbreaker {

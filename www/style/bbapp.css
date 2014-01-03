@@ -43,9 +43,11 @@
 	padding-bottom: 3em;
 	background: white;
 }
-body.large .viewcontent {
+.padbox {padding: 12px; padding-top:1em; }
+body.large .viewcontent, body.large .padbox {
 	padding: 2em;
 }
+
 .viewtitleafter {
 	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
@@ -787,7 +789,6 @@ examples and history as two floating boxes, which will stack or go side by side.
 
 /************************** L A Y O U T    H E L P E R S ****************************/
 
-.padbox {padding: 8px; }
 .padsides {padding-left: 8px; padding-right:8px;}
 
 
