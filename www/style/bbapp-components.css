@@ -37,7 +37,7 @@ All have class .indexedheadline. Used on top of every single view.
 .indexedheadline.schoolcat:after {content: "\E333";} /* certificate icon */
 .indexedheadline.helpcat:after {content: "\E195";} /* help icon */
 
-.killstacktabbutton:before {  /* The back button found to the far left inside the top header of non-root views */
+.gobackbutton:before {  /* The back button found to the far left inside the top header of non-root views */
 	position: absolute;
 	font-family: 'Glyphicons Regular';
 	content: "\E211"; /* left arrow icon */
