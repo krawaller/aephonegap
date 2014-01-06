@@ -1,3 +1,18 @@
+.mainnavsection {
+	display: none;
+}
+.mainnavsection.active {
+	display: inherit;
+}
+
+
+
+.languageselect button {
+	display: block;
+	margin: 8em auto;
+}
+
+
 .writeinstruction .writeexample {
 	background-color: #EEE;
 	border-color: #CCC;

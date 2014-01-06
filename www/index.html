@@ -6,7 +6,6 @@
 	<link href="style/objectprinter3.css" rel="stylesheet" type="text/css" />
 	<link href="style/bbapp.css" rel="stylesheet" type="text/css" />
 	<link href="style/bbapp-modal.css" rel="stylesheet" type="text/css" />
-	<link href="style/bbapp-settings.css" rel="stylesheet" type="text/css" />
 	<link href="style/bbapp-controlpanel.css" rel="stylesheet" type="text/css" />
 	<link href="style/bbapp-parser.css" rel="stylesheet" type="text/css" />
 	<link href="style/bbapp-layout.css" rel="stylesheet" type="text/css" />
@@ -14,7 +13,6 @@
 	<link href="style/bbapp-questions.css" rel="stylesheet" type="text/css" />
 	<link href="style/bbapp-toolinfo.css" rel="stylesheet" type="text/css" />
 	<link href="style/bbapp-error.css" rel="stylesheet" type="text/css" />
-	<link href="style/bbapp-nav.css" rel="stylesheet" type="text/css" />
 	<link href="style/bbapp-school.css" rel="stylesheet" type="text/css" />
 	<link href="style/bbapp-components.css" rel="stylesheet" type="text/css" />
 	<!--<link href='style/glyphicons.css' rel='stylesheet' />-->
@@ -948,14 +946,16 @@
 		<h5 class='nav-header linksheadline'></h5>
 		<div class='linklist davidlist'></div>
 	</div>
-	<h5 class='nav-header lessonoperationsheadline'></h5>
-	<div class='togglebox'>
-		<div class='centerbox'>
-			<button class='btn btn-xs btn-default showexamplesbutton togglefirstbutton' data-kind='basic'></button>
-			<button class='btn btn-xs active btn-default hideexamplesbutton togglesecondbutton' data-kind='basic'></button>
+	<div class='lessonoperationsection'>
+		<h5 class='nav-header lessonoperationsheadline'></h5>
+		<div class='togglebox'>
+			<div class='centerbox'>
+				<button class='btn btn-xs btn-default showexamplesbutton togglefirstbutton' data-kind='basic'></button>
+				<button class='btn btn-xs active btn-default hideexamplesbutton togglesecondbutton' data-kind='basic'></button>
+			</div>
+			<div class='toolsimplelist togglecontentfirst davidlist'></div>
+			<div class='toolexamplelist examplelist togglecontentsecond'></div>
 		</div>
-		<div class='toolsimplelist togglecontentfirst davidlist'></div>
-		<div class='toolexamplelist examplelist togglecontentsecond'></div>
 	</div>
 	<h5 class='nav-header finishlessonheadline'></h5>
 	<div class='trafficlight'>

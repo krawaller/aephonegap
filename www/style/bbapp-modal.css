@@ -1,3 +1,18 @@
+
+.davidmodalcontent:before {
+	content: " ";
+	display: block;
+	height: 5px;
+}
+
+
+
+.davidmodalcontent:after {
+	content: " ";
+	display: block;
+	height: 2em;
+}
+
 .davidlink.nolink, .davidlink.nolink:hover {
 	color: white;
 	background-color: inherit;
