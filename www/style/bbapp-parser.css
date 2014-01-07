@@ -1,3 +1,11 @@
+button.expressionsbutton {
+	white-space: normal;
+	font-size: 11px;
+	line-height: 1.1em;
+	overflow-y: hidden;
+	padding: 4px 7px;
+}
+
 .helpbuttonbox {
 	opacity: 1;
 	-webkit-transition: opacity 0.3s ease-in-out;
@@ -15,7 +23,7 @@
 	opacity: 0;
 }
 
-.parserview .analysis {
+/*.parserview .analysis {
 	opacity: 0;
 	-webkit-transition: opacity 0.3s ease-in-out;
 	-moz-transition: opacity 0.3s ease-in-out;
@@ -25,7 +33,7 @@
 
 .notempty .analysis {
 	opacity: 1;
-}
+}*/
 
 
 button.newcalcbutton {
@@ -40,6 +48,7 @@ button.newcalcbutton {
 
 .parserview .firstresultcontainer {
 	text-align: center;
+	margin-top: 24px;
 }
 
 div.parsersection {
@@ -52,12 +61,6 @@ div.parsersection {
 	text-align: center;
 	background-color: transparent;
 	overflow-y: scroll;
-}
-
-.parserinput {
-	position: relative;
-	margin-top: 10px;
-	margin-bottom: 1em;
 }
 
 body.large .parserinput {

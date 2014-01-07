@@ -1,3 +1,10 @@
+.resultview div.firstresultcontainer {margin-top:0;}
+
+.txticon.txtunchecked, .txticon.txtcheck {
+margin-bottom: 3px;
+display: inline-block;
+}
+
 .mainnavsection {
 	display: none;
 }
