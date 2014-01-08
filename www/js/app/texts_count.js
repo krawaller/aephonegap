@@ -1,0 +1,1 @@
+CATS.texts.count={en:{description:6402,writeinstruction:1846,explanation:8296,targets:2295,returns:2206,effect:4817,steps:10468,lessons:440,total:36770},sv:{description:5997,writeinstruction:1757,explanation:7590,targets:2107,returns:1922,effect:4416,steps:9572,lessons:434,total:33795},ops:300,lessons:21,words:124};
