@@ -181,6 +181,7 @@ div.davidlist { /* davidlinks are (always?) found insides divs with class .david
 	bottom: 6px;
 	border-radius: 7px;
 	content: " ";
+	border: 1px solid #555;
 }
 .mark {
 	display:inline-block;
@@ -192,8 +193,10 @@ div.davidlist { /* davidlinks are (always?) found insides divs with class .david
 	bottom: 4px;
 }
 
+.viewtitle .nolink:after{border:0;}
+
 .toollink.green:after, .lessonlink.green:after, .mark.green:after {background-color: #29D107;}
-.toollink.red:after, .lessonlink.red:after, .mark.red:after {background-color: #F11308;}
+.toollink.red:after, .lessonlink.red:after, .mark.red:after {background-color: #F11308;border:0;}
 .toollink.yellow:after, .lessonlink.yellow:after, .mark.yellow:after {background-color: #FFDD00;}
 
 span.toollink:after, span.lessonlink:after {bottom:3px;}
