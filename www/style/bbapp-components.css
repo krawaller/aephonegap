@@ -63,16 +63,24 @@ This is the short help description that is displayed at the top of all views (un
 */
 
 
-.viewhelp {
+.viewhelp, .viewsmallhelp {
 	background-color: #DDD;
-	margin-bottom: 24px;
 	border-radius: 6px;
-	font-size: 12px;
 	text-align: left;
-	padding: 4px;
 }
 
-.viewhelp .helplink {
+.viewhelp {
+	min-height: 97%;
+	padding: 12px;
+}
+
+.viewsmallhelp {
+	padding: 4px;
+	font-size: 12px;
+	margin-bottom: 24px;
+}
+
+.viewsmallhelp .helplink {
 	float: right;
 	margin-left: 10px;
 }
