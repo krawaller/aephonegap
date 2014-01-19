@@ -1,3 +1,23 @@
+/**************************************************************************************************************
+***************************************************************************************************************
+
+     T O P   L E V E L   S T Y L E S
+
+These are the styles applied to body and other top-level elements
+
+*/
+
+#MathJax_Message { margin-left: -10000% !important; }
+body {
+	-webkit-overflow-scrolling: touch;
+	-moz-overflow-scrolling: touch;
+	-o-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+	user-select: none;
+}
+body.large {
+	font-size: 16px;
+}
 
 /**************************************************************************************************************
 ***************************************************************************************************************
@@ -14,11 +34,12 @@ These are the classes used in construction of the various views.
 	left: 0;
 	right: 0;
 	bottom: 0;
-	/*padding: 6px;*/
+	overflow-x: hidden;
 }
 .viewcontent {
 	position: absolute;
 	overflow-y: auto;
+	overflow-x: hidden;
 	top: 46px;
 	bottom: 0;
 	left: 0;
@@ -147,6 +168,37 @@ body.no3dtransforms div.sequencehiddenright {
 .mainnavsection {display: none;}
 .mainnavsection.active {display: inherit;}
 
+
+/**************************************************************************************************************
+***************************************************************************************************************
+
+     G L Y P H   I C O N S
+
+The app implements Glyphicons in a custom way using span tags with the .txticon class, then containing
+pure text. So no need for the normal Glyphicons :after thing.
+
+*/
+
+@font-face {
+  font-family: 'Glyphicons Regular';
+  src: url('../fonts/glyphicons-regular.eot');
+  src: url('../fonts/glyphicons-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-regular.woff') format('woff'), url('../fonts/glyphicons-regular.ttf') format('truetype'), url('../fonts/glyphicons-regular.svg#glyphiconsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.txticon {
+	font-family: 'Glyphicons Regular';
+	font-style: normal;
+	font-weight: normal;
+	/*color: #5d5d5d;*/
+	vertical-align: middle;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	font-variant: normal;
+	line-height: 1em;
+	text-decoration: none;
+}
 
 /**************************************************************************************************************
 ***************************************************************************************************************
