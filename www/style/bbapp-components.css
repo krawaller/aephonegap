@@ -2,6 +2,155 @@
 /**************************************************************************************************************
 ***************************************************************************************************************
 
+     V I E W   S K E L E T O N
+
+These are the classes used in construction of the various views.
+
+*/
+
+.viewbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*padding: 6px;*/
+}
+.viewcontent {
+	position: absolute;
+	overflow-y: auto;
+	top: 46px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 12px;
+	padding-top: 1em;
+	padding-bottom: 3em;
+	background: white;
+}
+.padbox {padding: 12px; padding-top:1em; }
+body.large .viewcontent, body.large .padbox {
+	padding: 2em;
+}
+
+.viewtitleafter {
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	content: " ";
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 46px;
+	z-index: 10;
+	height: 15px;
+	margin: 0;
+	padding: 0;
+}
+
+.viewcontentafter {
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	content: " ";
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 15px;
+	z-index: 100;
+}
+
+div.sequencecontainer {overflow:hidden;}
+
+div.sequence {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+body.has3dtransforms div.sequence {
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	-webkit-transform: translateX(0);
+	-moz-transition: -moz-transform 0.4s ease-in-out;
+	-moz-transform: translateX(0);
+	-o-transition: -o-transform 0.4s ease-in-out;
+	-o-transform: translateX(0);
+	transition: transform 0.4s ease-in-out;
+	transform: translateX(0);
+}
+
+body.has3dtransforms div.sequencehiddenleft {
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	-webkit-transform: translate3d(-105%, 0, 0);
+	-moz-transition: -moz-transform 0.4s ease-in-out;
+	-moz-transform: translate3d(-105%, 0, 0);
+	-o-transition: -o-transform 0.4s ease-in-out;
+	-o-transform: translate3d(-105%, 0, 0);
+	transition: transform 0.4s ease-in-out;
+	transform: translate3d(-105%, 0, 0);
+}
+
+body.has3dtransforms div.sequencehiddenright {
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	-webkit-transform: translate3d(105%, 0, 0);
+	-moz-transition: -moz-transform 0.4s ease-in-out;
+	-moz-transform: translate3d(105%, 0, 0);
+	-o-transition: -o-transform 0.4s ease-in-out;
+	-o-transform: translate3d(105%, 0, 0);
+	transition: transform 0.4s ease-in-out;
+	transform: translate3d(105%, 0, 0);
+}
+
+body.no3dtransforms div.sequence {
+	transition: left 0.4s ease-in-out;
+	transition: right 0.4s ease-in-out;
+	left: 0;
+	right: 0;
+}
+
+body.no3dtransforms div.sequencehiddenleft {
+	transition: right 0.4s ease-in-out;
+	right: 105%;
+}
+
+body.no3dtransforms div.sequencehiddenright {
+	transition: left 0.4s ease-in-out;
+	left: 105%;
+}
+
+.root > .sequence {
+	-moz-box-shadow: 0 0 5px 5px #C7D3FF;
+	-webkit-box-shadow: 0 0 5px 5px #C7D3FF;
+	box-shadow: 0 0 5px 5px #C7D3FF;
+}
+
+.absbox {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* controlling which tab is shown, every tab has a .mainnavsection class */
+.mainnavsection {display: none;}
+.mainnavsection.active {display: inherit;}
+
+
+/**************************************************************************************************************
+***************************************************************************************************************
+
      T O P   H E A D L I N E
 
 All have class .indexedheadline. Used on top of every single view.
@@ -56,9 +205,10 @@ All have class .indexedheadline. Used on top of every single view.
 /**************************************************************************************************************
 ***************************************************************************************************************
 
-     H E L P   S U M M A R Y
+     H E L P
 
-This is the short help description that is displayed at the top of all views (unless turned off)
+The .viewsmallhelp is the short help description that is displayed at the top of all views (unless turned off)
+Then .viewhelp is the big opened view.
 
 */
 
@@ -89,6 +239,56 @@ This is the short help description that is displayed at the top of all views (un
 .hidehelpmode .showhelpbutton {display:inline-block;}
 
 
+.mainhelpsymbol { /* used in the main help text for each tab */
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+	margin-top: 0;
+	font-size: 60px;
+}
+/* .helplist is used for lists in the help texts */
+.helplist {
+	margin-left: 3em;
+}
+.helplist dt {
+	font-size: 30px;
+	display: block;
+	width: 35px;
+	float: left;
+	clear: left;
+}
+.helplist dd {
+	margin-top: 14px;
+	float: left;
+}
+
+/**************************************************************************************************************
+***************************************************************************************************************
+
+     T O G G L E   B O X
+
+This is a utility thing that's used for toggling between different lists, such as expanding examples and
+sorting in the tool index. Purely utility, no style.
+
+*/
+
+.togglebox .togglesecondbutton, .togglebox .togglecontentsecond {
+	display: none;
+}
+ 
+.togglebox.togglesecond .togglesecondbutton {
+	display: inline-block;
+}
+
+.togglebox.togglesecond .togglecontentsecond {
+	display: block;
+}
+
+.togglebox.togglesecond .togglefirstbutton, .togglebox.togglesecond .togglecontentfirst {
+	display: none;
+}
+
+
 /**************************************************************************************************************
 ***************************************************************************************************************
 
@@ -111,6 +311,14 @@ a few other places. All have the .rownum class.
 	min-width: 15px;
 	padding: 1px 6px;
 	text-align: center;
+}
+
+h5.rownum {
+	display: inline-block;
+	margin: 0 auto;
+	font-weight: normal;
+	text-align:center;
+	margin-bottom: 1em;
 }
 
 
@@ -264,7 +472,7 @@ Tabs will be bottom or left depending if the body tag has the .portrait or the .
 	bottom: 0;
 	left: 0;
 	text-align: center;	
-	z-index: 1;
+	z-index: 10; /* so not to be below view content box shadow */
 	background-color: #C7D3FF
 }
 body.portrait .controlpanel {right: 0;}
@@ -396,3 +604,35 @@ body.portrait .tab.active:after {
 
 body.landscape .tab.active {margin-right: -1px;}
 body.portrait .tab.active {margin-top: -1px;}
+
+
+
+/**************************************************************************************************************
+***************************************************************************************************************
+
+	T E X T   R E P O R T   M O D E
+
+In textreport mode, a button is shown after every single (almost) piece of text, to facilitate
+sending a text-related bugreport.
+
+*/
+
+.textreportmode .textreport {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #B94A48;
+	color: white;
+	padding: 0 0.5em;
+	margin-left: 0.35em;
+}
+
+.textreportmode .textreportmodeonbutton {
+	display: none;
+}
+.textreportmode .textreportmodeoffbutton {
+	display: inline-block;
+}
+button.textreportmodeoffbutton {display:none;}
+
+
+.textreport { display: none;}

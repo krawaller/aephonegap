@@ -1,3 +1,10 @@
+
+body.large {
+	font-size: 16px;
+}
+
+
+
 .resultview div.firstresultcontainer {margin-top:0;}
 
 .txticon.txtunchecked, .txticon.txtcheck {
@@ -5,12 +12,6 @@ margin-bottom: 3px;
 display: inline-block;
 }
 
-.mainnavsection {
-	display: none;
-}
-.mainnavsection.active {
-	display: inherit;
-}
 
 
 
@@ -42,100 +43,7 @@ display: inline-block;
 }
 
 
-.helpitemview, .wordview {
-	text-align: left;
-}
-.viewbox {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	/*padding: 6px;*/
-}
-.viewcontent {
-	position: absolute;
-	overflow-y: auto;
-	top: 46px;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	padding: 12px;
-	padding-top: 1em;
-	padding-bottom: 3em;
-	background: white;
-}
-.padbox {padding: 12px; padding-top:1em; }
-body.large .viewcontent, body.large .padbox {
-	padding: 2em;
-}
 
-.viewtitleafter {
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-	content: " ";
-	position: absolute;
-	display: block;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	top: 46px;
-	z-index: 10;
-	height: 15px;
-	margin: 0;
-	padding: 0;
-}
-
-.viewcontentafter {
-	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-	content: " ";
-	position: absolute;
-	display: block;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 15px;
-	z-index: 100;
-}
-
-.helplist {
-	margin-left: 3em;
-}
-
-.helplist dt {
-	font-size: 30px;
-	display: block;
-	width: 35px;
-	float: left;
-	clear: left;
-}
-.helplist dd {
-	margin-top: 14px;
-	float: left;
-}
-
-.mainhelpsymbol {
-	display: block;
-	text-align: center;
-	margin: 20px auto;
-	margin-top: 0;
-	font-size: 60px;
-}
-
-.davidmodalcontent {
-	background-color: white;
-}
 
 .toollist {
 	list-style-type: none;
@@ -143,21 +51,6 @@ body.large .viewcontent, body.large .padbox {
 	padding-left: 0;
 }
 
-.togglebox .togglesecondbutton, .togglebox .togglecontentsecond {
-	display: none;
-}
- 
-.togglebox.togglesecond .togglesecondbutton {
-	display: inline-block;
-}
-
-.togglebox.togglesecond .togglecontentsecond {
-	display: block;
-}
-
-.togglebox.togglesecond .togglefirstbutton, .togglebox.togglesecond .togglecontentfirst {
-	display: none;
-}
 
 .group:after {
 	content: ".";
@@ -165,12 +58,6 @@ body.large .viewcontent, body.large .padbox {
 	visibility: hidden;
 	height: 0;
 	clear: both;
-}
-
-.root > .sequence {
-	-moz-box-shadow: 0 0 5px 5px #C7D3FF;
-	-webkit-box-shadow: 0 0 5px 5px #C7D3FF;
-	box-shadow: 0 0 5px 5px #C7D3FF;
 }
 
 
@@ -196,15 +83,6 @@ body.large .viewcontent, body.large .padbox {
 	text-align: center;
 }
 
-h5.rownum {
-	float: none;
-	display: inline-block;
-	margin: 0 auto;
-	font-weight: normal;
-	text-align:center;
-	margin-bottom: 1em;
-}
-
 .txticon {
 	font-family: 'Glyphicons Regular';
 	font-style: normal;
@@ -222,28 +100,6 @@ body {
 	user-select: none;
 }
 
-.welcomeview {
-	-webkit-transition: -webkit-transform 0.3s ease-in-out;
-	-webkit-transform: scale3d(0, 0, 0);
-	-moz-transition: -moz-transform 0.3s ease-in-out;
-	-moz-transform: scale3d(0, 0, 0);
-	-o-transition: -o-transform 0.3s ease-in-out;
-	-o-transform: scale3d(0, 0, 0);
-	transition: transform 0.3s ease-in-out;
-	transform: scale3d(0, 0, 0);
-}
-
-body.loaded .welcomeview {
-	display: inherit;
-	-webkit-transition: -webkit-transform 0.3s ease-in-out;
-	-webkit-transform: scale3d(1, 1, 1);
-	-moz-transition: -moz-transform 0.3s ease-in-out;
-	-moz-transform: scale3d(1, 1, 1);
-	-o-transition: -o-transform 0.3s ease-in-out;
-	-o-transform: scale3d(1, 1, 1);
-	transition: transform 0.3s ease-in-out;
-	transform: scale3d(1, 1, 1);
-}
 
 .gradient {
 	position: absolute;
@@ -324,83 +180,6 @@ z-index: 10;
 	display: none;
 }
 
-/*
-.panelhider {
-	display: none;
-}
-
-.panelhider button {
-	position: relative;
-	top: 7px;
-	left: 7px;
-}
-
-.panelhider .buttonshow {
-	display: none;
-}
-
-.hidenav .buttonshow {
-	display: block;
-}
-
-.hidenav .buttonhide {
-	display: none;
-}
-
-body.phone.landscape.hidenav .controlpanel {
-	-webkit-transition: top 0.3s ease-in-out;
-	-moz-transition: top 0.3s ease-in-out;
-	-o-transition: top 0.3s ease-in-out;
-	transition: top 0.3s ease-in-out;
-	top: -48px;
-}
-
-
-body.phone.landscape .controlpanel {
-	-webkit-transition: top 0.3s ease-in-out;
-	-moz-transition: top 0.3s ease-in-out;
-	-o-transition: top 0.3s ease-in-out;
-	transition: top 0.3s ease-in-out;
-	top: 0;
-}
-
-body.phone.landscape.hidenav .resultsection {
-	-webkit-transition: top 0.3s ease-in-out;
-	-moz-transition: top 0.3s ease-in-out;
-	-o-transition: top 0.3s ease-in-out;
-	transition: top 0.3s ease-in-out;
-	top: 0;
-}
-
-body.phone.landscape .resultsection {
-	-webkit-transition: top 0.3s ease-in-out;
-	-moz-transition: top 0.3s ease-in-out;
-	-o-transition: top 0.3s ease-in-out;
-	transition: top 0.3s ease-in-out;
-	top: 48px;
-}
-
-body.phone.landscape .panelhider {
-	display: block;
-	background-color: #F9F9F9;
-	height: 39px;
-	width: 42px;
-	position: fixed;
-	z-index: 10;
-	right: 0;
-	margin-top: -1px;
-	border-left: 1px solid #CCC;
-	border-bottom: 1px solid #CCC;
-	border-bottom-left-radius: 5px;
-}
-
-body.phone.landscape .focusedtext .panelhider {
-	display: none;
-}
-*/
-
-
-
 math, math[display="block"] {
 	margin-bottom: 0;
 }
@@ -411,50 +190,6 @@ math, math[display="block"] {
 	display: block;
 	margin: 0 auto;
 }
-
-/******** TOUR ********/
-
-/*div.toursection {
-	opacity: 0;
-	display: none;
-}
-
-body.touring div.toursection {
-	opacity: 1;
-	display: block;
-}*/
-
-div.toursection {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 10000;
-	background-color: rgba(40,40,230,0.05);
-	overflow: hidden;
-}
-
-div.toursection div.popover {
-	display: block;
-	width: 200px;
-}
-
-div.toursection div.middlemarker {
-	width: 1px;
-	height: 1px;
-	position: relative;
-	top: 150px;
-	margin: 0 auto;
-}
-
-button.tourender {
-	position: absolute;
-	bottom: 8px;
-	left: 8px;
-}
-
-body div.main .tourhighlight {box-shadow: 0px 0px 6px #33D;}
 
 
 /***************** bla ********************************/
@@ -544,6 +279,7 @@ body.phone.portrait div.mathview {
 	overflow-y: scroll;
 }
 
+/*
 body.phone.portrait .zoomed .structinstruction {
 	height: 0;
 	overflow: hidden;
@@ -551,7 +287,7 @@ body.phone.portrait .zoomed .structinstruction {
 	-moz-transition: height 0.6s ease-in-out;
 	-o-transition: height 0.6s ease-in-out;
 	transition: height 0.6s ease-in-out;
-}
+}*/
 
 
 
@@ -615,39 +351,6 @@ div.result {z-index:2;}
 	margin-top: 1em;
 }
 
-/************************ C O N T R O L    P A N E L ********************************/
-
-
-
-/*.controlpanel { margin-bottom: 1em; }*/
-/* .large.landscape .controlpanel { float: right; } */
-
-
-/************************ T O O L   I N F O ****************************************/
-
-
-
-/************************ C A L C U L A T O R   M O D E *****************************/
-
-div.sequencecontainer {overflow:hidden;}
-
-div.sequence {
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
-body.has3dtransforms div.sequence {
-	-webkit-transition: -webkit-transform 0.4s ease-in-out;
-	-webkit-transform: translateX(0);
-	-moz-transition: -moz-transform 0.4s ease-in-out;
-	-moz-transform: translateX(0);
-	-o-transition: -o-transform 0.4s ease-in-out;
-	-o-transform: translateX(0);
-
-	transition: transform 0.4s ease-in-out;
-	transform: translateX(0);
-
-}
 
 body {
 	-webkit-overflow-scrolling: touch;
@@ -656,47 +359,15 @@ body {
 	overflow-scrolling: touch;
 }
 
-body.has3dtransforms div.sequencehiddenleft {
-	-webkit-transition: -webkit-transform 0.4s ease-in-out;
-	-webkit-transform: translate3d(-105%, 0, 0);
-	-moz-transition: -moz-transform 0.4s ease-in-out;
-	-moz-transform: translate3d(-105%, 0, 0);
-	-o-transition: -o-transform 0.4s ease-in-out;
-	-o-transform: translate3d(-105%, 0, 0);
-	transition: transform 0.4s ease-in-out;
-	transform: translate3d(-105%, 0, 0);
-}
-
-body.has3dtransforms div.sequencehiddenright {
-	-webkit-transition: -webkit-transform 0.4s ease-in-out;
-	-webkit-transform: translate3d(105%, 0, 0);
-	-moz-transition: -moz-transform 0.4s ease-in-out;
-	-moz-transform: translate3d(105%, 0, 0);
-	-o-transition: -o-transform 0.4s ease-in-out;
-	-o-transform: translate3d(105%, 0, 0);
-	transition: transform 0.4s ease-in-out;
-	transform: translate3d(105%, 0, 0);
-}
+/************************ C O N T R O L    P A N E L ********************************/
 
 
 
+/*.controlpanel { margin-bottom: 1em; }*/
+/* .large.landscape .controlpanel { float: right; } */
 
-body.no3dtransforms div.sequence {
-	transition: left 0.4s ease-in-out;
-	transition: right 0.4s ease-in-out;
-	left: 0;
-	right: 0;
-}
 
-body.no3dtransforms div.sequencehiddenleft {
-	transition: right 0.4s ease-in-out;
-	right: 105%;
-}
-
-body.no3dtransforms div.sequencehiddenright {
-	transition: left 0.4s ease-in-out;
-	left: 105%;
-}
+/************************ C A L C U L A T O R   M O D E *****************************/
 
 
 
@@ -707,105 +378,6 @@ div.sequence ul.listview > li {
 	margin-bottom: 3.5em;
 }
 
-/*div.sequence {
-	-webkit-transition: left 0.4s ease-in-out, right 0.4s ease-in-out;
-	-moz-transition: left 0.4s ease-in-out, right 0.4s ease-in-out;
-	-o-transition: left 0.4s ease-in-out, right 0.4s ease-in-out;
-	transition: left 0.4s ease-in-out, right 0.4s ease-in-out;
-	left: 0;
-	right: 0;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-
-div.sequencehiddenleft {
-	-webkit-transition: left 0.4s ease-in-out, right 0.4s ease-in-out;
-	-moz-transition: left 0.4s ease-in-out, right 0.4s ease-in-out;
-	-o-transition: left 0.4s ease-in-out, right 0.4s ease-in-out;
-	transition: left 0.4s ease-in-out, right 0.4s ease-in-out;
-	left:-100%;
-	right: 100%;
-}
-div.sequencehiddenright {
-	-webkit-transition: left 0.4s ease-in-out, right 0.4s ease-in-out;
-	-moz-transition: left 0.4s ease-in-out, right 0.4s ease-in-out;
-	-o-transition: left 0.4s ease-in-out, right 0.4s ease-in-out;
-	transition: left 0.4s ease-in-out, right 0.4s ease-in-out;
-	left: 100%;
-	right:-100%;
-}*/
-
-/*
-div.sequence {
-	-webkit-transition: left 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out;
-	-moz-transition: left 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out;
-	-o-transition: left 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out;
-	transition: left 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out;
-	left: 0;
-	right: 0;
-	opacity: 1;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-
-div.sequencehiddenleft {
-	-webkit-transition: left 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out;
-	-moz-transition: left 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out;
-	-o-transition: left 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out;
-	transition: left 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out;
-	left:-100%;
-	right: 100%;
-}
-div.sequencehiddenright {
-	-webkit-transition: left 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out;
-	-moz-transition: left 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out;
-	-o-transition: left 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out;
-	transition: left 0.4s ease-in-out, right 0.4s ease-in-out, opacity 0.4s ease-in-out;
-	opacity:0.2;
-	left: 100%;
-	right:-100%;
-}
-*/
-
-
-
-/************************ T E X T    R E P O R T   M O D E *****************************/
-
-.textreportmode .textreport {
-	display: inline-block;
-	border-radius: 4px;
-	background-color: #B94A48;
-	color: white;
-	padding: 0 0.5em;
-	margin-left: 0.35em;
-}
-
-.textreportmode .textreportmodeonbutton {
-	display: none;
-}
-.textreportmode .textreportmodeoffbutton {
-	display: inline-block;
-}
-button.textreportmodeoffbutton {display:none;}
-
-
-.textreport { display: none;}
-
-/******************* T O O L    I N D E X ***************************/
-
-div.filtersection {
-	background-color: #DBDBDB;
-	padding: 5px;
-	border-radius: 4px;
-	text-align: center;
-}
-div.filtersection button {width:38px;}
-
-
-/******************* E X P R E S S I O N S   V I E W ***************************
-Can be showed in modal or in leftsection (large landscape). Either way, we have 
-examples and history as two floating boxes, which will stack or go side by side.
-*/
 
 
 
@@ -814,269 +386,7 @@ examples and history as two floating boxes, which will stack or go side by side.
 .padsides {padding-left: 8px; padding-right:8px;}
 
 
-.absbox {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
 
-/************************** M A I N   L A Y O U T ****************************/
-/*div.calculator {
-	z-index: 0;
-	top: 32px;
-}*/
-
-
-
-			/************** LANDSCAPE ************/
-
-			/************* PORTRAIT **************/
-
-
-			/*************** SMALL **************/
-
-/*body.phone div.sequence > div.padbox {
-	padding-right: 0;
-	right: 12px;
-}*/
-
-
-			/*********** SMALL PORTRAIT *********/
-body.phone.portrait .historyview {margin-top:1.5em;}
-
-body.phone.portrait .historyview {margin-top:1.5em;}
-
-/*body.phone.portrait .headlinefilter {display:none;}*/
-body.phone.portrait p.filterexplanation {text-align: left;}
-
-
-
-			/*********** SMALL LANDSCAPE *********/
-
-
-
-
-
-			/*************** LARGE ***************/
-
-
-			/*********** LARGE PORTRAIT *********/
-
-/*
-body.large.portrait div.wordindex,
-body.large.portrait div.toolindex  {
-	border-bottom: 1px solid #CCC;
-	height: 250px;
-}
-
-body.large.portrait div.wordview,
-body.large.portrait div.toolinfo {
-	top: 265px;
-}
-
-
-body.large.portrait div.infoindex  {
-	border-bottom: 1px solid #CCC;
-	height: 120px;
-}
-
-body.large.portrait div.infoitem {
-	top: 135px;
-}
-*/
-
-
-
-			/*********** LARGE LANDSCAPE *********/
-/*
-body.large.landscape .expressionsview .instruction {display:none;}
-
-body.large.landscape .historyview {margin-top:1.5em;}
-
-body.large.landscape div.wordindex, body.large.landscape div.toolindex, body.large.landscape div.infoindex {
-	border-right: 1px solid #CCC;
-	right: 60%;
-}
-body.large.landscape div.wordview, body.large.landscape div.toolinfo, body.large.landscape div.infoitem {
-	left: 40%;
-}
-
-body.large.landscape div.emptyhistory {display:none;}
-*/
-
-
-
-
-/*
-.reader {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 100;
-	text-align: center;
-	background-color: rgba(0,0,0,0.5);
-}
-
-.showingmodal {
-	overflow: hidden;
-	height: 100%;
-}
-
-.showingmodal #calculator {
-	position: absolute;
-	overflow: hidden;
-}
-
-.showingmodal #result {
-	display: none;
-}
-
-.showingmodal #wrapper {
-	overflow: hidden;
-}
-
-.readerhead {
-	border-bottom: 1px solid #ccc;
-	padding: 0.5em;
-}
-
-.readerheader {
-	text-align: center;
-	margin: 0;
-	margin-bottom: 0.2em;
-	padding: 0;
-}
-
-.readerhead .modalcloser {
-	position: absolute;
-}
-
-
-
-
-.readerwrapper {
-	border-radius: 7px;
-	margin: 1em auto;
-	width: 95%;
-	height: 94%;
-	text-align: left;
-	background-color: rgba(255,255,255,1);
-	position: relative;
-}
-
-.modaloutercontainer {
-	position: relative;
-	height: 90%;
-	overflow-x: hidden;
-}
-
-.modalcontainer {
-	background-color: white;
-	padding: 0.5em;
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/************************ U N S O R T E D *****************************/
-
-
-/*
-.columnbox {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	bottom: 0;
-}*/
-/*
-.scrollbox {
-	overflow: hidden;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-}
-
-.scrollbox > div {
-	overflow-y: scroll;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-}
-*/
-/*
-.large .leftcolumn {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 67%;
-	margin-right: 1em;
-	border-right: 1px solid #ccc;
-}
-
-.large .rightcolumn {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 32%;
-}
-
-*/
-
-
-
-
-/*.boxlist li {
-	border: 1px solid #CCC;
-	margin-right: 0.5em;
-	margin-bottom: 0.5em;
-}*/
-/*
-.main {
-	overflow: hidden;
-}*/
-/*
-#calculator, #wrapper {
-	overflow-y: scroll;
-}*/
-
-/*.lookupcurrent {
-	font-weight: bolder;
-}*/
-
-.lookup .buttonindex {
-	display: none;
-}
-
-.phone .showingitem .buttonindex {
-	display: block;
-}
-
-.phone .lookupcurrent {
-	font-weight: inherit;
-}
-
-.phone .lookupindex, .phone .lookupitem {
-	display: none;
-}
-.phone .showingindex .lookupindex, .phone .showingitem .lookupitem { display: block;}
 
 /*.sequence {
 	position: relative;
@@ -1132,38 +442,6 @@ ul.listview {
 	padding-left: 0;
 	padding-right: 0;
 }
-
-
-/*
-#wrapper {
-	padding: 0.5em;
-	height: 100%;
-}
-*/
-/*
-.toolname {
-	border: 1px solid #CCC;
-	padding: 1px;
-	font-size: 0.7em;
-	display: table-cell;
-}
-
-.toolname .icon {
-	display: block;
-	float: left;
-	margin: 1px;
-	height: 11px;
-	width: 11px;
-	border: 1px solid #CCC;
-}
-
-.toolname .icon.complicating { background-color: red;}
-.toolname .icon.simplifying { background-color: green;}
-.toolname .icon.condsimpl { background-color: #A4FF99;}
-.toolname .icon.rephrasing { background-color: yellow;}
-.toolname .icon.integrity { background-color: magenta;}
-
-*/
 
 .listview { margin-left: 0; }
 .listview li { list-style-type: none; }

@@ -216,22 +216,6 @@ button.buttonexample {
 
 /************************ T O O L   I N D E X ****************************************/
 
-/*
-.toollist .toolitem { display: none; }
-
-.showsimplifying .toolsimplifying,
-.showcondsimpl .toolcondsimpl,
-.showcomplicating .toolcomplicating,
-.showrephrasing .toolrephrasing,
-.showintegrity .toolintegrity,
-.showdecimalifying .tooldecimalifying {
-	display: inline-block;
-}
-
-.hidecomplex .toolcomplex,
-.hideatomic .toolatomic {
-	display: none;
-}*/
 
 .toolindex .btn-group {margin-bottom:4px;}
 
@@ -252,3 +236,12 @@ button.buttonexample {
 	display: block;
 }
 
+div.filtersection {
+	background-color: #DBDBDB;
+	padding: 5px;
+	border-radius: 4px;
+	text-align: center;
+}
+div.filtersection button {width:38px;}
+
+body.phone.portrait p.filterexplanation {text-align: left;}
