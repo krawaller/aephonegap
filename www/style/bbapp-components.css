@@ -85,7 +85,7 @@ This is the short help description that is displayed at the top of all views (un
 	margin-left: 10px;
 }
 
-.hidehelpmode .hidehelpbutton, .hidehelpmode .viewhelp, button.showhelpbutton {display:none;}
+.hidehelpmode .hidehelpbutton, .hidehelpmode .viewsmallhelp, button.showhelpbutton {display:none;}
 .hidehelpmode .showhelpbutton {display:inline-block;}
 
 
