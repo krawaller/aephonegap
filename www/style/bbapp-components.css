@@ -48,7 +48,13 @@ These are the classes used in construction of the various views.
 	padding-top: 1em;
 	padding-bottom: 3em;
 	background: white;
+	text-align: left;
 }
+
+.parserview {
+	text-align: center;
+}
+
 .padbox {padding: 12px; padding-top:1em; }
 body.large .viewcontent, body.large .padbox {
 	padding: 2em;
