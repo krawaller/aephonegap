@@ -38,6 +38,9 @@ button.newcalcbutton {
 	margin-bottom: 10px;
 }
 
+.parserview .viewcontent {
+	text-align: center;
+}
 
 .parserview .firstresultcontainer {
 	text-align: center;

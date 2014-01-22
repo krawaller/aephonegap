@@ -164,12 +164,6 @@ body.no3dtransforms div.sequencehiddenright {
 	left: 105%;
 }
 
-.root > .sequence {
-	-moz-box-shadow: 0 0 5px 5px #C7D3FF;
-	-webkit-box-shadow: 0 0 5px 5px #C7D3FF;
-	box-shadow: 0 0 5px 5px #C7D3FF;
-}
-
 .absbox {
 	position: absolute;
 	top: 0;
@@ -179,10 +173,7 @@ body.no3dtransforms div.sequencehiddenright {
 }
 
 /* controlling which tab is shown, every tab has a .mainnavsection class */
-.mainnavsection {
-	overflow-x: hidden;
-	display: none;
-}
+.mainnavsection {display: none;}
 .mainnavsection.active {display: inherit;}
 
 
