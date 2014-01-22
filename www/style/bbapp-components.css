@@ -19,6 +19,11 @@ body.large {
 	font-size: 16px;
 }
 
+.wrapper { /* to prevent weird sidescrolling bug */
+	overflow: hidden;
+	width: 100%;
+}
+
 /**************************************************************************************************************
 ***************************************************************************************************************
 
@@ -99,7 +104,10 @@ body.large .viewcontent, body.large .padbox {
 	z-index: 100;
 }
 
-div.sequencecontainer {overflow:hidden;}
+div.sequencecontainer {
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
 
 div.sequence {
 	overflow-x: hidden;
