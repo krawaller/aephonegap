@@ -14,6 +14,7 @@ body {
 	-o-overflow-scrolling: touch;
 	overflow-scrolling: touch;
 	user-select: none;
+	overflow: hidden;
 }
 body.large {
 	font-size: 16px;
@@ -21,7 +22,6 @@ body.large {
 
 .wrapper { /* to prevent weird sidescrolling bug */
 	overflow: hidden;
-	width: 100%;
 }
 
 /**************************************************************************************************************
@@ -228,6 +228,7 @@ All have class .indexedheadline. Used on top of every single view.
 	color: white;
 	position: relative;
 	overflow-y: visible;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
 .indexedheadline:after { /* category icon shown to the far right of all top headlines */
@@ -533,138 +534,70 @@ Tabs will be bottom or left depending if the body tag has the .portrait or the .
 	left: 0;
 	text-align: center;	
 	z-index: 10; /* so not to be below view content box shadow */
-	background-color: #C7D3FF
+	background-color: #fafafa;
+	border-color: #e6e6e6;
 }
-body.portrait .controlpanel {right: 0;}
-body.landscape .controlpanel {top: 0;}
+body.portrait .controlpanel {
+	border-top: 1px solid #e6e6e6;
+	right: 0;
+}
+body.landscape .controlpanel {
+	border-right: 1px solid #e6e6e6;
+	top: 0;
+}
 body.phone.portrait .controlpanel {
-	height: 42px;
-	padding-left: 10px;
+	height: 45px;
 }
 body.landscape .controlpanel{
-	padding-top: 45px;
-	width: 42px;
+	width: 45px;
 }
 body.large.portrait .controlpanel {
-	height: 100px;
+	height: 65px;
 }
 body.large.landscape .controlpanel {
-	width: 100px;
+	width: 65px;
 }
-body.phone.landscape .wrapper {left: 42px;}
-body.phone.portrait .wrapper {bottom: 42px;}
-body.large.portrait .wrapper {bottom: 100px;}
-body.large.landscape .wrapper {left: 100px;}
+body.phone.landscape .wrapper {left: 45px;}
+body.phone.portrait .wrapper {bottom: 45px;}
+body.large.portrait .wrapper {bottom: 65px;}
+body.large.landscape .wrapper {left: 65px;}
 
 	/* --------------------------------------------- Tab look ------------------------------------------------- */
 
-.tab {
-	height: 35px;
-	width: 50px;
-	text-align: center;
-	background-color: #E7EDFF;
-	position: relative;
+.mainnavicon {
 	display: block;
-	font-size: 20px;
+	font-size: 18px;
+	color: #5d5d5d;
 }
 
-.tab > span {
-	color: #888;
-	padding: 5px;
-	margin-top: 2px;
+body.portrait .tab {
 	display: inline-block;
-}
-
-
-body.landscape .tab {
-	margin-bottom: 5px;
-	border-radius: 10px 0 0 10px;
-}
-
-body.portrait .tab {
-	margin-right: 5px;
-	border-radius: 0 0 10px 10px;
-}
-
-
-body.portrait .tab:before {
-	position: absolute;
-	left: -6px;
-	top: 0;
-	content: " ";
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 6px 30px 0;
-	border-color: transparent #E7EDFF transparent transparent;
-}
-body.portrait .tab:after {
-	position: absolute;
-	right: -6px;
-	top: 0;
-	content: " ";
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 30px 6px 0 0;
-	border-color: #E7EDFF transparent transparent transparent;
-}
-
-body.phone .tab {
-	padding: 0;
-	text-align: center;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-body.portrait .tab {
-	margin-right: 10px;
-	margin-left: 0;
-	float: left;
-}
-
-body.portrait .tab:last-child {
-	margin-right: 0;
+	width: 18%;
 }
 
 body.landscape .tab {
-	padding-right: 0;
-	float: right;
-	clear: right;
+	display: block;
+	padding-top: 4%;
+	height: 18%;
 }
-
-body.large.landscape .tab {
-	margin-bottom: 1em;
-	margin-top: 1em;
+.controlbuttontext {
+	font-size: 10px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	color: #5d5d5d;
 }
-
-body.large.portrait .tab {
-	margin-right: 6px;
-	width: 80px;
+.tab, .tab:hover, .tab:active {
+	text-decoration: none;
 }
 
 /* -----------------------------------------Active Tab look ------------------------------------------------- */
 
-.tab.active {
-	background-color: white;
+.tab.active > .mainnavicon {
+	color: #007aff;
 }
-
-.tab.active > span {
-	color: #5d5d5d;
+.tab.active > .controlbuttontext {
+	color: #007aff;
 }
-
-body.portrait .tab.active:before {
-	border-color: transparent white transparent transparent;
-	z-index: 2;
-}
-
-body.portrait .tab.active:after {
-	border-color: white transparent transparent transparent;
-	z-index: 2;
-}
-
-body.landscape .tab.active {margin-right: -1px;}
-body.portrait .tab.active {margin-top: -1px;}
-
 
 
 /**************************************************************************************************************
