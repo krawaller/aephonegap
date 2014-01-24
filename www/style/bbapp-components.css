@@ -80,13 +80,13 @@ body.large .viewcontent, body.large .padbox {
 	left: 0;
 	right: 0;
 	top: 46px;
-	z-index: 10;
+	z-index: 3;
 	height: 15px;
 	margin: 0;
 	padding: 0;
 }
 
-.viewcontentafter {
+body.portrait .viewcontentafter {
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -231,21 +231,7 @@ All have class .indexedheadline. Used on top of every single view.
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
-.indexedheadline:after { /* category icon shown to the far right of all top headlines */
-	font-family: 'Glyphicons Regular';
-	right: 4px;
-	top: 0;
-	font-size: 30px;
-	color: #333;
-	text-shadow: 0 0 5px white;
-	position: absolute;
-}
-.indexedheadline.glossarycat:after {content: "\E072";} /* book icon */
-.indexedheadline.calccat:after {content: "\E324";} /* calculator icon */
-.indexedheadline.toolcat:after {content: "\E461";} /* blacksmith icon */
-.indexedheadline.infocat:after {content: "\E196";} /* infocircle icon */
-.indexedheadline.schoolcat:after {content: "\E333";} /* certificate icon */
-.indexedheadline.helpcat:after {content: "\E195";} /* help icon */
+
 
 .gobackbutton:before {  /* The back button found to the far left inside the top header of non-root views */
 	position: absolute;
@@ -253,13 +239,32 @@ All have class .indexedheadline. Used on top of every single view.
 	content: "\E211"; /* left arrow icon */
 	top: 2px;
 	left: 0;
-	z-index: 100;
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
 	text-align: left;
 	padding-left: 5px;
 	width: 50px; /* Bigger width than needed to make bigger hitboxes, which means easier to click */
+}
+
+.togglehelpbutton {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+}
+
+.togglehelpbutton:before {
+	position: absolute;
+	font-family: 'Glyphicons Regular';
+	content: "\E195";
+	top: 4px;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	text-align: left;
+	padding-right: 5px;
+	width: 50px;
 }
 
 
@@ -273,7 +278,6 @@ Then .viewhelp is the big opened view.
 
 */
 
-
 .viewhelp, .viewsmallhelp {
 	background-color: #DDD;
 	border-radius: 6px;
@@ -286,19 +290,56 @@ Then .viewhelp is the big opened view.
 }
 
 .viewsmallhelp {
-	padding: 4px;
+	background-color: #E7EDFF;
+	border-radius: 9px;
+	border: 1px solid #AAA;
+	margin: 0 8px;
+	margin-top: 10px;
+	padding: 6px;
+	font-weight: normal;
 	font-size: 12px;
-	margin-bottom: 24px;
+	position: absolute;
+	z-index: 4;
+	right: 0;
+	display: none;
+	box-shadow: -3px 3px 3px #CCC;
+	max-width: 270px;
+}
+
+.viewsmallhelp:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 5px 25px 5px;
+	display: block;
+	width: 0;
+	z-index: 1;
+	border-color: #AAA transparent;
+	top: -25px;
+	right: 5px;
+}
+
+.viewsmallhelp:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 5px 25px 5px;
+	display: block;
+	width: 0;
+	z-index: 1;
+	top: -20px;
+	border-color: #E7EDFF transparent;
+	right: 5px;
+}
+
+.showingsmallhelp > .viewsmallhelp {
+	display: block;
 }
 
 .viewsmallhelp .helplink {
 	float: right;
 	margin-left: 10px;
 }
-
-.hidehelpmode .hidehelpbutton, .hidehelpmode .viewsmallhelp, button.showhelpbutton {display:none;}
-.hidehelpmode .showhelpbutton {display:inline-block;}
-
 
 .mainhelpsymbol { /* used in the main help text for each tab */
 	display: block;
