@@ -586,6 +586,9 @@ body.landscape .tab {
 	font-weight: 300;
 	color: #5d5d5d;
 }
+.controlbuttontextshort {display: none;}
+body.phone.landscape .controlbuttontext {display: none;}
+body.phone.landscape .controlbuttontextshort {display: inline;}
 .tab, .tab:hover, .tab:active {
 	text-decoration: none;
 }
