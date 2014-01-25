@@ -45,7 +45,7 @@ These are the classes used in construction of the various views.
 	position: absolute;
 	overflow-y: auto;
 	overflow-x: hidden;
-	top: 46px;
+	top: 44px;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -79,7 +79,7 @@ body.large .viewcontent, body.large .padbox {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	top: 46px;
+	top: 44px;
 	z-index: 3;
 	height: 15px;
 	margin: 0;
@@ -218,53 +218,72 @@ All have class .indexedheadline. Used on top of every single view.
 */
 
 .indexedheadline {
-	background-color: #444;
+	background-color: #fafafa;
+	border-bottom: 1px solid #e6e6e6;
 	display: block;
-	padding: 6px;
 	padding-left: 30px; /* to accommodate for Back arrow button */
 	padding-right: 35px; /* to accommodate for category Icon */
+	padding-top: 0;
 	text-align: center;
-	margin-bottom: 1em;
-	color: white;
+	height: 44px;
+	line-height: 44px;
+	color: #222;
 	position: relative;
 	overflow-y: visible;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	padding: 0;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: center;
+	overflow: hidden;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+	padding: 0 65px;
+	font-weight: 500;
+	-webkit-tap-highlight-color: transparent;
 }
 
 
 
-.gobackbutton:before {  /* The back button found to the far left inside the top header of non-root views */
+.gobackbutton {  /* The back button found to the far left inside the top header of non-root views */
 	position: absolute;
-	font-family: 'Glyphicons Regular';
-	content: "\E211"; /* left arrow icon */
 	top: 2px;
 	left: 0;
-	font-size: 20px;
-	color: white;
 	text-decoration: none;
 	text-align: left;
-	padding-left: 5px;
-	width: 50px; /* Bigger width than needed to make bigger hitboxes, which means easier to click */
+	width: 38px;
+	height: 44px;
+	background-image: url(../images/back.svg);
+	background-position: center center;
+	background-size: 24px 44px;
+	background-repeat: no-repeat;
 }
 
 .togglehelpbutton {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 50px;
+	width: 44px;
+	height: 44px;
 }
 
 .togglehelpbutton:before {
 	position: absolute;
-	font-family: 'Glyphicons Regular';
-	content: "\E195";
-	top: 4px;
+	top: 0;
+	right: 0;
+	width: 38px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
 	font-size: 20px;
-	color: white;
-	text-decoration: none;
-	text-align: left;
-	padding-right: 5px;
-	width: 50px;
+	font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	content: "?";
+	color: rgb(21, 125, 251);
 }
 
 
@@ -587,10 +606,10 @@ body.landscape .controlpanel {
 	top: 0;
 }
 body.phone.portrait .controlpanel {
-	height: 45px;
+	height: 49px;
 }
 body.landscape .controlpanel{
-	width: 45px;
+	width: 49px;
 }
 body.large.portrait .controlpanel {
 	height: 65px;
@@ -598,8 +617,8 @@ body.large.portrait .controlpanel {
 body.large.landscape .controlpanel {
 	width: 65px;
 }
-body.phone.landscape .wrapper {left: 45px;}
-body.phone.portrait .wrapper {bottom: 45px;}
+body.phone.landscape .wrapper {left: 49px;}
+body.phone.portrait .wrapper {bottom: 49px;}
 body.large.portrait .wrapper {bottom: 65px;}
 body.large.landscape .wrapper {left: 65px;}
 
@@ -637,10 +656,10 @@ body.phone.landscape .controlbuttontextshort {display: inline;}
 /* -----------------------------------------Active Tab look ------------------------------------------------- */
 
 .tab.active > .mainnavicon {
-	color: #007aff;
+	color: rgb(21, 125, 251);
 }
 .tab.active > .controlbuttontext {
-	color: #007aff;
+	color: rgb(21, 125, 251);
 }
 
 
