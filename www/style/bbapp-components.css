@@ -221,9 +221,7 @@ All have class .indexedheadline. Used on top of every single view.
 	background-color: #fafafa;
 	border-bottom: 1px solid #e6e6e6;
 	display: block;
-	padding-left: 30px; /* to accommodate for Back arrow button */
-	padding-right: 35px; /* to accommodate for category Icon */
-	padding-top: 0;
+	padding: 0;
 	text-align: center;
 	height: 44px;
 	line-height: 44px;
@@ -243,7 +241,6 @@ All have class .indexedheadline. Used on top of every single view.
 	-webkit-box-flex: 1;
 	-moz-box-flex: 1;
 	box-flex: 1;
-	padding: 0 65px;
 	font-weight: 500;
 	-webkit-tap-highlight-color: transparent;
 }
