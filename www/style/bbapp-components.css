@@ -478,8 +478,8 @@ They are all anchor tags, and all have the class .davidlink.
 .davidlink {
 	display: inline-block;
 	border-radius: 3px;
-	background-color: #E7EDFF;
-	border: 1px solid #C7D3FF;
+	/*background-color: #E7EDFF;
+	border: 1px solid #C7D3FF;*/
 	padding: 2px 4px;
 	color: #000;
 	text-decoration: none;
@@ -532,6 +532,52 @@ div.davidlist { /* davidlinks are (always?) found insides divs with class .david
 .toollink.green:after, .lessonlink.green:after, .mark.green:after {background-color: #29D107;}
 .toollink.red:after, .lessonlink.red:after, .mark.red:after {background-color: #F11308;border:0;}
 .toollink.yellow:after, .lessonlink.yellow:after, .mark.yellow:after {background-color: #FFDD00;}
+
+
+.toollink.yellow, .lessonlink.yellow {padding-right:23px;}
+.toollink.yellow:after, .lessonlink.yellow:after {
+	background-image: url('../images/lock_yellow.svg');
+	width: 15px;
+	height: 15px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 2px;
+	opacity: 0.85;
+	background-position-y: center;
+	background-color:inherit;
+	border-radius:0;
+	border: none;
+}
+
+.toollink.green, .lessonlink.green {padding-right:22px;}
+.toollink.green:after, .lessonlink.green:after {
+	background-image: url('../images/lock_green.svg');
+	width: 15px;
+	height: 15px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 2px;
+	opacity: 0.85;
+	background-position-y: center;
+	background-color:inherit;
+	border-radius:0;
+	border: none;
+}
+
+.toollink.red, .lessonlink.red {padding-right:18px;}
+.toollink.red:after, .lessonlink.red:after {
+	background-image: url('../images/lock_red.svg');
+	width: 10px;
+	height: 15px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 2px;
+	opacity: 0.85;
+	background-position-y: center;
+	background-color:inherit;
+	border-radius:0;
+	border: none;
+}
 
 span.toollink:after, span.lessonlink:after {bottom:3px;}
 
