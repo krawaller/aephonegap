@@ -121,6 +121,7 @@ div.afternomarkcontainer {display:none;}
 
 .optop {
 	text-align: center;
+	margin-top: 4px;
 	margin-bottom: 8px;
 	max-width: 650px;
 }
