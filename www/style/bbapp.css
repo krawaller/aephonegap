@@ -1,7 +1,5 @@
 
 
-.resultview div.firstresultcontainer {margin-top:0;}
-
 .txticon.txtunchecked, .txticon.txtcheck {
 margin-bottom: 5px;
 display: inline-block;
@@ -141,6 +139,9 @@ button.stepbutton, button.decbutton, button.loadingbutton, button.backbutton {
 
 .main .MathJax_Display {
 	margin: 0;
+	overflow: hidden;
+	padding-bottom: 3px;
+	padding-top: 2px;
 }
 
 .historyinstruction {display:none;}

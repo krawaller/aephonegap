@@ -453,10 +453,10 @@
 			<span class='rownum'></span>
 			<button class='btn btn-default btn-xs toggleonbutton toggler'></button>
 			<button class='btn btn-default btn-xs toggleoffbutton toggler active'></button>
-		</div>
-		<div class='oprest'>
 			<div class='toolnamecontainer'></div>
 			<div class='becausecontainer clear-both'></div>
+		</div>
+		<div class='oprest horizontalbox'>
 			<div class='opsection'>
 				<div class='opcontainer'>
 					<div class='beforecontainer oppartcontainer'></div>
@@ -465,9 +465,9 @@
 				</div>
 			</div>
 			<div class='afternomarkcontainer'></div>
-			<div class='buttonstepsbelowcontainer centered'>
-				<button class='btn btn-default btn-xs centered buttonstepsbelow'></button>
-			</div>
+		</div>
+		<div class='buttonstepsbelowcontainer centered'>
+			<button class='btn btn-default btn-xs centered buttonstepsbelow'></button>
 		</div>
 	</div>
 </div>
@@ -590,8 +590,8 @@
 		<span class='textclearerbtn'></span>
 	</div>
 	<div class='text-error errormsg'>&nbsp;</div>
-	<div class='firstresultcontainer substep analysis'>
-		<span class='rownum analyseheadline'></span>
+	<div class='analysis'>
+		<h5 class='nav-header analyseheadline'></h5>
 		<div class='oprest'>
 			<p class='description'></p>
 			<div class='math'></div>
@@ -606,10 +606,10 @@
 </div>
 <div id='sequenceviewtemplate'>
 	<div class="absbox padbox">
-		<div class='firstresult'>
-			<div class='firstresultcontainer substep'></div>
-		</div>
+		<h5 class='nav-header firstresultheadline'></h5>
+		<div class='firstresultcontainer'></div>
 		<div class='substeps'>
+			<h5 class='nav-header substepsheadline'></h5>
 			<p class='substepsintro'></p>
 			<div class='operation substep collapsed'>
 				<div class='optop'>
@@ -634,9 +634,9 @@
 
 <div id='mastersequenceviewtemplate'>
 	<div class="absbox padbox">
-		<div class='firstresult'>
-			<div class='firstresultcontainer substep'></div>
-		</div>
+		<h5 class='nav-header firstresultheadline'></h5>
+		<div class='firstresultcontainer'></div>
+		<h5 class='nav-header substepsheadline'></h5>
 		<p class='substepsintro'></p>
 		<p class='loadindicator hidden'></p>
 		<div class='substeps hidden'>

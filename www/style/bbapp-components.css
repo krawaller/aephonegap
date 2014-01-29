@@ -554,21 +554,27 @@ Shown on toolview and lessonview.
 	margin-right: 10px;
 	padding-top: 2px;
 	font-size: 14px;
+	position: relative;
 }
 .trafficlight > span {
 	width: 14px;
 	height: 14px;
-	border-radius: 7px;
+	/*border-radius: 7px;*/
 	display: inline-block;
 }
+.trafficlight > span:after {
+	position: absolute;
+	left: 3px;
+	font-family: "myfont";
+}
 
-.tredlamp {background-color:#4B0300;}
-.tyellowlamp {background-color:#625500;}
-.tgreenlamp {background-color:#0E5500;}
+.tredlamp:after {color:#4B0300;content:"b";}
+.tyellowlamp:after {color:#625500;content:"c";}
+.tgreenlamp:after {color:#0E5500;content:"a";}
 
-.trafficlight.trafficred > .tredlamp {background-color:#F11308;box-shadow: 0 0 12px #F11308;}
-.trafficlight.trafficyellow > .tyellowlamp {background-color:#FFDD00;box-shadow: 0 0 12px #FFDD00;}
-.trafficlight.trafficgreen > .tgreenlamp {background-color:#29D107;box-shadow: 0 0 12px #29D107;}
+.trafficlight.trafficred > .tredlamp:after {color:#F11308;text-shadow: 0 0 6px #F11308;}
+.trafficlight.trafficyellow > .tyellowlamp:after {color:#FFDD00;text-shadow: 0 0 6px #FFDD00;}
+.trafficlight.trafficgreen > .tgreenlamp:after {color:#29D107;text-shadow: 0 0 6px #29D107;}
 
 
 
@@ -636,7 +642,7 @@ body.landscape .controlpanel:after { /* hides border between controlpanel and st
 
 .mainnavicon {
 	display: block;
-	font-size: 18px;
+	font-size: 20px;
 	color: #5d5d5d;
 }
 
@@ -710,7 +716,7 @@ button.textreportmodeoffbutton {display:none;}
 
 */
 
-button.btn, button.btn:active, button.btn:hover {
+button.btn, button.btn:active, button.btn:hover, button.btn:focus {
 	border-color: rgb(21, 125, 251);
 	color: rgb(21, 125, 251);
 	-webkit-box-shadow: none;
@@ -728,6 +734,64 @@ button.btn.btn-xs {
 	padding-top: 3px;
 	padding-bottom: 3px;
 }
+
+/**************************************************************************************************************
+***************************************************************************************************************
+
+     H O R I Z O N T A L   S C R O L L   B O X
+
+Used to display maths. A box with horizontal scrolling.
+
+*/
+
+.horizontalbox {
+	overflow-x: auto;
+	padding: 0 10px;
+	margin: 0 -10px;
+	position: relative;
+}
+/*.horizontalbox:before {
+	background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(229,229,229,0) 100%); 
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,0))); 
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(229,229,229,0) 100%); 
+	background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(229,229,229,0) 100%);
+	background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(229,229,229,0) 100%); 
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(229,229,229,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00e5e5e5',GradientType=1 );
+	content: " ";
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	width: 10px;
+	z-index: 3;
+	margin: 0;
+	padding: 0;
+}
+.horizontalbox:after {
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0.01) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.01)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0.01) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left,  rgba(255,255,255,0.01) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(left,  rgba(255,255,255,0.01) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right,  rgba(255,255,255,0.01) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ffffff', endColorstr='#ffffff',GradientType=1 );
+	content: " ";
+	position: absolute;
+	display: block;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	width: 10px;
+	z-index: 3;
+	margin: 0;
+	padding: 0;
+}*/
+
+
+
+
 
 
 /**************************************************************************************************************
