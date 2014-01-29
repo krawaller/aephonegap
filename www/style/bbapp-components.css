@@ -498,18 +498,9 @@ div.davidlist { /* davidlinks are (always?) found insides divs with class .david
 
    /* ------------------- Tool and lesson link completion marker ------------------------------------------------ */
 
-
-.toollink, .lessonlink {position:relative; padding-right:17px;} /* To accommodate for the red/green/yellow marker to the far right of tool and lesson links */
 .toollink:after, .lessonlink:after, .mark:after {
 	display: inline-block;
-	height: 10px;
-	width: 10px;
-	position: absolute;
-	right: 3px;
-	bottom: 6px;
-	border-radius: 7px;
-	content: " ";
-	border: 1px solid #555;
+	padding-left: 3px;
 }
 .mark {
 	display:inline-block;
@@ -523,64 +514,26 @@ div.davidlist { /* davidlinks are (always?) found insides divs with class .david
 
 .viewtitle .nolink:after{border:0;}
 
-.toollink.green:after, .lessonlink.green:after, .mark.green:after {background-color: #29D107;}
-.toollink.red:after, .lessonlink.red:after, .mark.red:after {background-color: #F11308;border:0;}
-.toollink.yellow:after, .lessonlink.yellow:after, .mark.yellow:after {background-color: #FFDD00;}
+.mark.green:after {background-color: #29D107;}
+.mark.red:after {background-color: #F11308;border:0;}
+.mark.yellow:after {background-color: #FFDD00;}
 
-
-.toollink.yellow, .lessonlink.yellow {padding-right:23px;}
-.toollink.yellow:after, .lessonlink.yellow:after {
-	/*background-image: url('../images/lock_yellow.svg');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position-y: center;*/
-	font-family: "myfont";
-	content:"c";
-	width: 15px;
-	height: 15px;
-	top: 2px;
-	opacity: 0.85;
+.toollink.green:after, .lessonlink.green:after, .mark.green:after,
+.toollink.red:after, .lessonlink.red:after, .mark.red:after,
+.toollink.yellow:after, .lessonlink.yellow:after, .mark.yellow:after {
 	background-color:inherit;
 	border-radius:0;
 	border: none;
-}
-
-.toollink.green, .lessonlink.green {padding-right:22px;}
-.toollink.green:after, .lessonlink.green:after {
-	/*background-image: url('../images/lock_green.svg');
-	background-position-y: center;
-	background-size: contain;
-	background-repeat: no-repeat;*/
 	font-family: "myfont";
-	content:"a";
-	width: 15px;
-	height: 15px;
-	top: 2px;
-	opacity: 0.85;
-	background-color:inherit;
-	border-radius:0;
-	border: none;
 }
 
-.toollink.red, .lessonlink.red {padding-right:18px;}
+
+.toollink.yellow:after, .lessonlink.yellow:after {content:"c";}
+.toollink.green:after, .lessonlink.green:after {content:"a";}
 .toollink.red:after, .lessonlink.red:after {
-	/*background-image: url('../images/lock_red.svg');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position-y: center;*/
-	font-family: "myfont";
 	content:"b";
 	font-size: 0.9em; /* locked glyph too big */
-	width: 10px;
-	height: 15px;
-	top: 2px;
-	opacity: 0.85;
-	background-color:inherit;
-	border-radius:0;
-	border: none;
 }
-
-span.toollink:after, span.lessonlink:after {bottom:3px;}
 
 /**************************************************************************************************************
 ***************************************************************************************************************
