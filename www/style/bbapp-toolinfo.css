@@ -103,14 +103,9 @@ button.schoolbutton {
 }
 
 .toolfilter {
-	text-align: center;
 	display: inline-block;
-	margin-bottom: 10px;
-}
-
-.toolfilter .rownum {
-	margin-bottom: 10px;
-	display: inline-block;
+	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 body.phone.landscape .toolinfo .btn-group {
@@ -217,7 +212,7 @@ button.buttonexample {
 /************************ T O O L   I N D E X ****************************************/
 
 
-.toolindex .btn-group {margin-bottom:4px;}
+.toolindex .btn-group {margin-bottom:6px;}
 
 .toggleboxbox .togglebox {display:none;}
 
@@ -236,12 +231,6 @@ button.buttonexample {
 	display: block;
 }
 
-div.filtersection {
-	background-color: #DBDBDB;
-	padding: 5px;
-	border-radius: 4px;
-	text-align: center;
+.filterexplanation {
+	margin: 1em 0;
 }
-div.filtersection button {width:38px;}
-
-body.phone.portrait p.filterexplanation {text-align: left;}
