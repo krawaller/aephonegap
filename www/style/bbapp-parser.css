@@ -1,9 +1,41 @@
+.parserinput {
+	position: relative;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.portrait .parserinput {
+	margin-top: 1em;
+}
+
+body.landscape .textfieldbox {
+	position: relative;
+	margin-left: 90px;
+	margin-right: 110px;
+}
+body.landscape .expressionsbutton {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+body.landscape .calcbutton {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+body.portrait .parserinput > button {
+	margin: 5px;
+	margin-top: 10px;
+}
+
 button.expressionsbutton {
 	white-space: normal;
 	font-size: 11px;
 	line-height: 1.1em;
 	overflow-y: hidden;
 	padding: 4px 7px;
+	width: 80px;
 }
 
 .helpbuttonbox {
@@ -12,14 +44,21 @@ button.expressionsbutton {
 	-moz-transition: opacity 0.3s ease-in-out;
 	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
-	margin: 3em auto;
+	position: absolute;
+	bottom: 2em;
+	right: 2em;
 }
 
 .notempty .helpbuttonbox {
 	opacity: 0;
 }
 
-/*.parserview .analysis {
+.analysis {
+	margin-top: 1em;
+	max-width: 650px;
+}
+
+.parserview .analysis {
 	opacity: 0;
 	-webkit-transition: opacity 0.3s ease-in-out;
 	-moz-transition: opacity 0.3s ease-in-out;
@@ -29,7 +68,7 @@ button.expressionsbutton {
 
 .notempty .analysis {
 	opacity: 1;
-}*/
+}
 
 
 button.newcalcbutton {
@@ -42,58 +81,10 @@ button.newcalcbutton {
 	text-align: center;
 }
 
-.parserview .firstresultcontainer {
-	text-align: center;
-	margin-top: 24px;
-}
-
-div.parsersection {
-	position:absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	z-index: 1000;
-	text-align: center;
-	background-color: transparent;
-	overflow-y: scroll;
-}
-
-body.large .parserinput {
-	margin-top: 2em;
-	margin-bottom: 0.5em;
-}
-
-body.large .parsersection .btns {
-	margin-bottom: 0.5em;
-}
-
-
-.parsersection .analysis {
-	margin-top: 10px;
-	text-align:center;
-	width: 85%;
-	margin-bottom: 2em;
-}
-
 .text-error {
 	color: red;
 	text-shadow: #FFF 0 0 5px;
 	margin-top: 10px;
-}
-
-
-div.inputview {
-	position: absolute;
-	top: 24px;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
-
-div.inputview div.btns {
-	margin: 0.5em;
-	position: relative;
 }
 
 .calcbutton {
@@ -107,7 +98,7 @@ div.inputview div.btns {
 	font-size: 18px;
 	position: absolute;
 	text-align: center;
-	right: 100px;
+	right: 0;
 	width: 35px;
 	height: 30px;
 	visibility: hidden;
@@ -118,10 +109,6 @@ div.inputview div.btns {
 	transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
 	opacity: 0;
 	text-shadow: -1px -1px 0 white,1px -1px 0 white,-1px 1px 0 white,1px 1px 0 white;
-}
-
-.parserinput {
-	position: relative;
 }
 
 .textclearerbtn > span {top:5px;}

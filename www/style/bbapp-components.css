@@ -40,6 +40,7 @@ These are the classes used in construction of the various views.
 	right: 0;
 	bottom: 0;
 	overflow-x: hidden;
+	background: white;
 }
 .viewcontent {
 	position: absolute;
@@ -52,9 +53,25 @@ These are the classes used in construction of the various views.
 	padding: 12px;
 	padding-top: 1em;
 	padding-bottom: 3em;
-	background: white;
 	text-align: left;
 }
+.viewbox:before {
+	position: absolute;
+	display: block;
+	font-family: "Glyphicons Regular";
+	color: #F1F1F1;
+	font-size: 100px;
+	margin-top: 32px;
+	text-align: right;
+	width: 100%;
+	padding-right: 10px;
+}
+.viewbox.glossarycat:before {content: "\E072";} /* book icon */
+.viewbox.calccat:before {content: "\E324";} /* calculator icon */
+.viewbox.toolcat:before {content: "\E461";} /* blacksmith icon */
+.viewbox.infocat:before {content: "\E196";} /* infocircle icon */
+.viewbox.schoolcat:before {content: "\E333";} /* certificate icon */
+.viewbox.helpcat:before {content: "\E195";} /* help icon */
 
 .parserview {
 	text-align: center;
@@ -299,8 +316,8 @@ Then .viewhelp is the big opened view.
 
 */
 
-.viewhelp, .viewsmallhelp {
-	background-color: #DDD;
+.viewsmallhelp {
+	background-color: #444;
 	border-radius: 6px;
 	text-align: left;
 }
@@ -311,11 +328,12 @@ Then .viewhelp is the big opened view.
 }
 
 .viewsmallhelp {
-	background-color: #E7EDFF;
+	background-color: #444;
+	color: white;
 	border-radius: 9px;
-	border: 1px solid #AAA;
+	border: 1px solid #444;
 	margin: 0 8px;
-	margin-top: 10px;
+	margin-top: 12px;
 	padding: 6px;
 	font-weight: normal;
 	font-size: 12px;
@@ -323,7 +341,6 @@ Then .viewhelp is the big opened view.
 	z-index: 4;
 	right: 0;
 	display: none;
-	box-shadow: -3px 3px 3px #CCC;
 	max-width: 270px;
 }
 
@@ -335,7 +352,7 @@ Then .viewhelp is the big opened view.
 	display: block;
 	width: 0;
 	z-index: 1;
-	border-color: #AAA transparent;
+	border-color: #444 transparent;
 	top: -25px;
 	right: 5px;
 }
@@ -349,7 +366,7 @@ Then .viewhelp is the big opened view.
 	width: 0;
 	z-index: 1;
 	top: -20px;
-	border-color: #E7EDFF transparent;
+	border-color: #444 transparent;
 	right: 5px;
 }
 
