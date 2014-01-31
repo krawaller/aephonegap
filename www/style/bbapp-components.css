@@ -519,18 +519,15 @@ div.davidlist { /* davidlinks are (always?) found insides divs with class .david
 
    /* ------------------- Tool and lesson link completion marker ------------------------------------------------ */
 
-.toollink:after, .lessonlink:after, .mark:after {
+.toollink:after, .lessonlink:after {
 	display: inline-block;
 	padding-left: 3px;
 }
 .mark {
-	display:inline-block;
-	position: relative;
-	width: 10px;
+	padding-right: 2px;
 }
 .mark:after {
-	right:0;
-	bottom: 4px;
+	display: inline-block;
 }
 
 .viewtitle .nolink:after{border:0;}
@@ -549,9 +546,9 @@ div.davidlist { /* davidlinks are (always?) found insides divs with class .david
 }
 
 
-.toollink.yellow:after, .lessonlink.yellow:after {content:"c";}
-.toollink.green:after, .lessonlink.green:after {content:"a";}
-.toollink.red:after, .lessonlink.red:after {
+.toollink.yellow:after, .lessonlink.yellow:after, .mark.yellow:after {content:"c";}
+.toollink.green:after, .lessonlink.green:after, .mark.green:after {content:"a";}
+.toollink.red:after, .lessonlink.red:after, .mark.red:after {
 	content:"b";
 	font-size: 0.9em; /* locked glyph too big */
 }
@@ -737,7 +734,7 @@ button.textreportmodeoffbutton {display:none;}
 
 */
 
-button.btn, button.btn:active, button.btn:hover, button.btn:focus {
+button.btn, button.btn:active, button.btn:hover, button.btn:focus, button.btn.disabled {
 	border-color: rgb(21, 125, 251);
 	color: rgb(21, 125, 251);
 	-webkit-box-shadow: none;

@@ -13,6 +13,9 @@ body.landscape .textfieldbox {
 	margin-left: 90px;
 	margin-right: 110px;
 }
+input.textfield {
+	background-color: transparent;
+}
 body.landscape .expressionsbutton {
 	position: absolute;
 	top: 0;
