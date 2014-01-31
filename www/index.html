@@ -1686,12 +1686,14 @@
 	var mainView = new CATS.bb.MainView({});
 	
 	if (window.StatusBar){
-		//window.StatusBar.overlaysWebView(true);
+		window.StatusBar.overlaysWebView(false);
+		window.StatusBar.backgroundColorByHexString("#fafafa");
 	}
 	document.addEventListener("deviceready", function(){
 		console.log("DEVICEREADY!");
 		if (window.StatusBar){
-			//window.StatusBar.overlaysWebView(true);
+			window.StatusBar.overlaysWebView(false);
+			window.StatusBar.backgroundColorByHexString("#fafafa");
 		}
 	}, false);
 
