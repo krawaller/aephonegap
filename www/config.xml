@@ -21,7 +21,7 @@
     <gap:platform name="android" />
 
     <gap:plugin name="org.apache.cordova.core.device" />
-    <!--<gap:plugin name="com.phonegap.plugin.statusbar" />-->
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
 
     <preference name="phonegap-version" value="3.1.0" />
     <preference name="orientation" value="default" />
@@ -34,7 +34,7 @@
     <preference name="KeyboardShrinksView" value="false" />
     <preference name="keyboard-shrinks-view" value="false" />
     <preference name="HideKeyboardFormAccessoryBar" value="true" />
-    <preference name="hide-keyboard-from-accessory-bar" value="true" />
+    <preference name="hide-keyboard-form-accessory-bar" value="true" />
 
 
     <icon src="icon.png" />

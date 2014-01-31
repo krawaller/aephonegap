@@ -472,8 +472,12 @@ h5.nav-header {
 	margin-left: 1em;
 	margin-right: 3em;
 	border-bottom: 1px solid #999;
-	padding-left: 3em;
+	padding-left: 2em;
 	text-align: left;
+}
+
+.landscape h5.nav-header {
+	padding-left: 4em;
 }
 
 /**************************************************************************************************************
