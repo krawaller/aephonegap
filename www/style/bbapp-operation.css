@@ -60,7 +60,6 @@ body.usingq .sequence .qheadline {
 	padding: 0.5em 0.8em;
 	min-width: 30px;
 	max-width: 100%;
-	background-color: white;
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
