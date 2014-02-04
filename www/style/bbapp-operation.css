@@ -1,3 +1,5 @@
+
+
 .firstresultcontainer {
 	max-width: 650px;
 	margin: 0 auto;
@@ -62,6 +64,7 @@ body.usingq .sequence .qheadline {
 	max-width: 100%;
 	overflow-x: hidden;
 	overflow-y: hidden;
+	background-color: white;
 }
 .oprest {
 	max-width: 650px;
@@ -159,7 +162,8 @@ div.afternomarkcontainer {display:none;}
 	text-align:center;
 	color: #555;
 	vertical-align: middle;
-	padding: 9px;
+	font-size: 20px;
+	padding: 0 22px;
 }
 
 .buttonback {

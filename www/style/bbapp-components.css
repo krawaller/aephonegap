@@ -1,3 +1,13 @@
+/*
+COLORS!! 
+weird blue: rgb(21,125,251);
+purple experiment: rgb(84,0, 255)
+*/
+
+p {
+margin: 0 0 1em;
+}
+
 /**************************************************************************************************************
 ***************************************************************************************************************
 
@@ -241,7 +251,7 @@ All have class .indexedheadline. Used on top of every single view.
 	text-align: left;
 	width: 38px;
 	height: 44px;
-	background-image: url(../images/back.svg);
+	background-image: url(../images/back_164_73_248.svg);
 	background-position: center center;
 	background-size: 24px 44px;
 	background-repeat: no-repeat;
@@ -266,7 +276,7 @@ All have class .indexedheadline. Used on top of every single view.
 	font-size: 20px;
 	font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	content: "?";
-	color: rgb(21, 125, 251);
+	color: rgb(164, 73, 248);
 }
 
 
@@ -469,7 +479,7 @@ h5.nav-header {
 	margin-top: 3em;
 	font-size: 0.85em;
 	margin-bottom: 2em;
-	margin-left: 1em;
+	margin-left: 0;
 	margin-right: 3em;
 	border-bottom: 1px solid #999;
 	padding-left: 2em;
@@ -690,10 +700,10 @@ body.phone.landscape .controlbuttontextshort {display: inline;}
 /* -----------------------------------------Active Tab look ------------------------------------------------- */
 
 .tab.active > .mainnavicon {
-	color: rgb(21, 125, 251);
+	color: rgb(164, 73, 248);
 }
 .tab.active > .controlbuttontext {
-	color: rgb(21, 125, 251);
+	color: rgb(164, 73, 248);
 }
 
 
@@ -735,16 +745,16 @@ button.textreportmodeoffbutton {display:none;}
 */
 
 button.btn, button.btn:active, button.btn:hover, button.btn:focus, button.btn.disabled {
-	border-color: rgb(21, 125, 251);
-	color: rgb(21, 125, 251);
+	border-color: rgb(164, 73, 248);
+	color: rgb(164, 73, 248);
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: transparent;
 }
 
 button.btn:active, button.btn.active {
-	border-color: rgb(21, 125, 251);
-	background-color: rgb(21, 125, 251);
+	border-color: rgb(164, 73, 248);
+	background-color: rgb(164, 73, 248);
 	color: white;
 }
 
@@ -762,13 +772,19 @@ Used to display maths. A box with horizontal scrolling.
 
 */
 
+.aftercontainer.oppartcontainer {
+	padding-right: 15px;
+}
+
 .horizontalbox {
-	overflow-x: auto;
-	padding: 0 10px;
 	margin: 0 -10px;
 	position: relative;
 }
-/*.horizontalbox:before {
+.horizontalboxcontent {
+	overflow-x: auto;
+	padding: 0 15px;
+}
+.horizontalbox > .leftsidegradient {
 	background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(229,229,229,0) 100%); 
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,0))); 
 	background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(229,229,229,0) 100%); 
@@ -776,18 +792,17 @@ Used to display maths. A box with horizontal scrolling.
 	background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(229,229,229,0) 100%); 
 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(229,229,229,0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00e5e5e5',GradientType=1 );
-	content: " ";
 	position: absolute;
 	display: block;
 	bottom: 0;
 	left: 0;
 	top: 0;
-	width: 10px;
+	width: 15px;
 	z-index: 3;
 	margin: 0;
 	padding: 0;
 }
-.horizontalbox:after {
+.horizontalbox > .rightsidegradient {
 	background: -moz-linear-gradient(left,  rgba(255,255,255,0.01) 0%, rgba(255,255,255,1) 100%);
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.01)), color-stop(100%,rgba(255,255,255,1)));
 	background: -webkit-linear-gradient(left,  rgba(255,255,255,0.01) 0%,rgba(255,255,255,1) 100%);
@@ -801,11 +816,11 @@ Used to display maths. A box with horizontal scrolling.
 	bottom: 0;
 	right: 0;
 	top: 0;
-	width: 10px;
+	width: 15px;
 	z-index: 3;
 	margin: 0;
 	padding: 0;
-}*/
+}
 
 
 
