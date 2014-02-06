@@ -1,4 +1,52 @@
+.mathview > .viewcontent {
+	text-align: center;
+}
 
+.objcont {
+	border: 1px solid #777;
+}
+
+.structobj.markme {
+	background-color: #E7EDFF;
+}
+
+.markme > .structtype {
+	background-color: #C7D3FF;
+	font-weight: bold;
+}
+
+.structobj {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
+.structobjs > .structobj {
+	border-right: 1px solid #777;
+	border-top: 1px solid #777;
+}
+
+.structobjs > .structobj:last-child {
+	border-right: none;
+}
+
+.structtype {
+	display: block;
+	margin: 0 auto;
+	padding: 1px 3px;
+}
+
+.structval {
+	display: block;
+	padding: 4px;
+}
+
+.structobjs {
+	display: block;
+}
+
+
+/*
 a.mathobj, a.mathobj:hover, a.mathobj:visited, a.mathobj:active {
 	display: block;
 	text-decoration: none;
@@ -93,3 +141,4 @@ a.mathobj, a.mathobj:hover, a.mathobj:visited, a.mathobj:active {
 .mathobj .markpart {
 	border-color: blue;
 }
+*/

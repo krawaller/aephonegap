@@ -4,6 +4,8 @@ weird blue: rgb(21,125,251);
 purple experiment: rgb(84,0, 255)
 */
 
+a {color:#5400FF;}
+
 p {
 margin: 0 0 1em;
 }
@@ -112,6 +114,7 @@ body.large .viewcontent, body.large .padbox {
 	margin: 0;
 	padding: 0;
 }
+body.landscape .viewtitleafter{height:10px;}
 
 body.portrait .viewcontentafter {
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
@@ -251,7 +254,7 @@ All have class .indexedheadline. Used on top of every single view.
 	text-align: left;
 	width: 38px;
 	height: 44px;
-	background-image: url(../images/back_164_73_248.svg);
+	background-image: url(../images/back.svg);
 	background-position: center center;
 	background-size: 24px 44px;
 	background-repeat: no-repeat;
@@ -276,7 +279,7 @@ All have class .indexedheadline. Used on top of every single view.
 	font-size: 20px;
 	font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	content: "?";
-	color: rgb(164, 73, 248);
+	color: rgb(84, 0, 255);
 }
 
 
@@ -700,10 +703,10 @@ body.phone.landscape .controlbuttontextshort {display: inline;}
 /* -----------------------------------------Active Tab look ------------------------------------------------- */
 
 .tab.active > .mainnavicon {
-	color: rgb(164, 73, 248);
+	color: rgb(84, 0, 255);
 }
 .tab.active > .controlbuttontext {
-	color: rgb(164, 73, 248);
+	color: rgb(84, 0, 255);
 }
 
 
@@ -745,16 +748,16 @@ button.textreportmodeoffbutton {display:none;}
 */
 
 button.btn, button.btn:active, button.btn:hover, button.btn:focus, button.btn.disabled {
-	border-color: rgb(164, 73, 248);
-	color: rgb(164, 73, 248);
+	border-color: rgb(84, 0, 255);
+	color: rgb(84, 0, 255);
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: transparent;
 }
 
 button.btn:active, button.btn.active {
-	border-color: rgb(164, 73, 248);
-	background-color: rgb(164, 73, 248);
+	border-color: rgb(84, 0, 255);
+	background-color: rgb(84, 0, 255);
 	color: white;
 }
 
@@ -782,7 +785,11 @@ Used to display maths. A box with horizontal scrolling.
 }
 .horizontalboxcontent {
 	overflow-x: auto;
-	padding: 0 15px;
+	padding: 0 15px 1em 15px;
+	white-space: nowrap;
+}
+.horizontalboxcontent > * {
+	display: inline-block;
 }
 .horizontalbox > .leftsidegradient {
 	background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); 

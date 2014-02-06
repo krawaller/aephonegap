@@ -1,4 +1,6 @@
-
+.substeps .substeps {
+	padding-bottom: 0;
+}
 
 .firstresultcontainer {
 	max-width: 650px;
@@ -148,8 +150,6 @@ div.afternomarkcontainer {display:none;}
 	display: table-cell;
 	width: 43%;
 	vertical-align: middle;
-	padding-top: 1em;
-	padding-bottom: 1em;
 }
 
 .oppartcontainer > div {
