@@ -23,7 +23,6 @@
 
 .structobjs > .structobj {
 	border-right: 1px solid #777;
-	border-top: 1px solid #777;
 }
 
 .structobjs > .structobj:last-child {
@@ -36,6 +35,10 @@
 	padding: 1px 3px;
 }
 
+.parent > .structtype {
+	border-bottom: 1px solid #777;
+}
+
 .structval {
 	display: block;
 	padding: 4px;
@@ -43,6 +46,10 @@
 
 .structobjs {
 	display: block;
+}
+
+.parent > .val {
+	display: none;
 }
 
 
