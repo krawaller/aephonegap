@@ -19,7 +19,6 @@ These are the styles applied to body and other top-level elements
 
 */
 
-#MathJax_Message { margin-left: -10000% !important; }
 body {
 	-webkit-overflow-scrolling: touch;
 	-moz-overflow-scrolling: touch;
@@ -830,8 +829,28 @@ Used to display maths. A box with horizontal scrolling.
 }
 
 
+/**************************************************************************************************************
+***************************************************************************************************************
 
+     M A T H   O B J E C T
 
+Displaying maths woo!  :)
+
+*/
+
+#MathJax_Message { margin-left: -10000% !important; }
+
+.mathobj, .mathobj:hover {
+	cursor: pointer;
+	padding: 3px;
+	border-radius: 3px;
+	color: #333333;
+	display: block;
+}
+
+.mathobj:active {
+	background-color:#D5BDFF;
+}
 
 
 /**************************************************************************************************************
