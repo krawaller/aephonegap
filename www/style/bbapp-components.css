@@ -4,7 +4,7 @@ weird blue: rgb(21,125,251);
 purple experiment: rgb(84,0, 255)
 */
 
-a {color:#5400FF;}
+/*a {color:#5400FF;}*/
 
 p {
 margin: 0 0 1em;
@@ -279,7 +279,7 @@ All have class .indexedheadline. Used on top of every single view.
 	font-size: 20px;
 	font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	content: "?";
-	color: rgb(84, 0, 255);
+	color: rgb(114, 36, 216);
 }
 
 
@@ -703,10 +703,10 @@ body.phone.landscape .controlbuttontextshort {display: inline;}
 /* -----------------------------------------Active Tab look ------------------------------------------------- */
 
 .tab.active > .mainnavicon {
-	color: rgb(84, 0, 255);
+	color: rgb(114, 36, 216);
 }
 .tab.active > .controlbuttontext {
-	color: rgb(84, 0, 255);
+	color: rgb(114, 36, 216);
 }
 
 
@@ -748,16 +748,16 @@ button.textreportmodeoffbutton {display:none;}
 */
 
 button.btn, button.btn:active, button.btn:hover, button.btn:focus, button.btn.disabled {
-	border-color: rgb(84, 0, 255);
-	color: rgb(84, 0, 255);
+	border-color: rgb(114, 36, 216);
+	color: rgb(114, 36, 216);
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: transparent;
 }
 
 button.btn:active, button.btn.active {
-	border-color: rgb(84, 0, 255);
-	background-color: rgb(84, 0, 255);
+	border-color: rgb(114, 36, 216);
+	background-color: rgb(114, 36, 216);
 	color: white;
 }
 
