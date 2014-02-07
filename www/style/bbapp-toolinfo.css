@@ -1,3 +1,11 @@
+.explanationsection .horizontalboxcontent .toolexplanation {
+	display: table;
+	width: 100%;
+}
+
+.explanationsection .beforecontainer > div {float:none;}
+.explanationsection .aftercontainer > div {float:none;}
+
 .helpitemview dt {
 	margin-left: 1em;
 }
@@ -138,13 +146,14 @@ button.buttonexample {
 
 .toolinfo .oppartcontainer {
 	padding-top: 0;
+	text-align:center;
 }
 
 .toolinfo .arrow {
 	padding-bottom: 1em;
 }
 
-.toolexplanation {
+.toolinfo .horizontalboxcontent > .toolexplanation {
 	display: table;
 	width: 100%;
 }
@@ -177,6 +186,7 @@ button.buttonexample {
 	font-weight: normal;
 	display: inline-block;
 	max-width: 350px;
+	white-space: normal;
 }
 
 .toolexampletext:before {
