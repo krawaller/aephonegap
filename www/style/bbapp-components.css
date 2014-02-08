@@ -907,3 +907,28 @@ pure text. So no need for the normal Glyphicons :after thing.
 	line-height: 1em;
 	text-decoration: none;
 }
+
+/**************************************************************************************************************
+***************************************************************************************************************
+
+     C L O S E U P   L A Y O U T
+
+Rules specific to the closeup view
+
+*/
+
+body.landscape .topbit {
+	float: left;
+	max-width: 54%;
+}
+
+body.landscape .structrender {
+	max-width: 42%;
+	margin-left: 1em;
+	display: inline-block;
+}
+
+body.landscape .textrender {
+	display: inline-block;
+	text-align: left;
+}
