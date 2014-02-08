@@ -923,6 +923,7 @@ Rendered in a table in the closeup view.
 	vertical-align: top;
 	border: 1px solid #777;
 	padding: 0;
+	position: relative;
 }
 
 .structtable {
@@ -944,8 +945,18 @@ Rendered in a table in the closeup view.
 
 .structtype {
 	display: block;
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
 	margin: 0 auto;
 	padding: 1px 3px;
+}
+
+.structtype.dummy {
+	position: inherit;
+	visibility: hidden;
+	font-weight: bold;
 }
 
 .structval {
@@ -965,7 +976,7 @@ Rules specific to the closeup view
 
 body.landscape .topbit {
 	float: left;
-	max-width: 54%;
+	width: 54%;
 }
 
 body.landscape .structrender {
@@ -989,7 +1000,7 @@ Rules specific to the parser view
 */
 
 body.landscape .renderedinput {
-	float: right;
+	display: inline-block;
 	width: 48%;
 	text-align: left;
 }
