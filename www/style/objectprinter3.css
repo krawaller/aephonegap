@@ -1,38 +1,24 @@
+.structtable td {
+	vertical-align: top;
+	border: 1px solid #777;
+	padding: 0;
+}
+
+.structtable {
+	border: 1px solid #777;
+}
+
 .mathview > .viewcontent {
 	text-align: center;
 }
 
-.objbox {
-	border: 1px solid #777;
-	display: inline-block;
-}
-
-.structobj.markme {
+.markchild, .markme {
 	background-color: #E7EDFF;
 }
 
-.markme > .structtype {
+.markme .structtype {
 	background-color: #C7D3FF;
 	font-weight: bold;
-}
-
-.structobj {
-	vertical-align: top;
-	text-align: center;
-	float: left;
-}
-
-.structobj.lonechild {
-	float: none;
-	display: block;
-}
-
-.structobjs > .structobj {
-	border-right: 1px solid #777;
-}
-
-.structobjs > .structobj:last-child {
-	border-right: none;
 }
 
 .structtype {
@@ -41,19 +27,7 @@
 	padding: 1px 3px;
 }
 
-.parent > .structtype {
-	border-bottom: 1px solid #777;
-}
-
 .structval {
 	display: block;
 	padding: 4px;
-}
-
-.structobjs {
-	display: block;
-}
-
-.parent > .val {
-	display: none;
 }
