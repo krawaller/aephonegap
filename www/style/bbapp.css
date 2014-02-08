@@ -150,58 +150,6 @@ button.stepbutton, button.decbutton, button.loadingbutton, button.backbutton {
 .emptyhistory .emptyhistorytext {display:block;}
 
 
-.mathview{text-align:center;}
-.mathview .nav-header{
-	margin-top:1.8em;
-	margin-bottom:0.8em;
-}
-body.phone.landscape div.mathview {text-align:left;}
-body.phone.landscape div.mathrender, body.phone.landscape div.textrender  {
-	float: left;
-	width: 49%;
-	margin-right: 0;
-}
-body.phone.landscape div.mathview div.structrender {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 50%;
-}
-body.phone.landscape div.mathview div.textrender {
-	clear: left;
-}
-
-
-body.phone.portrait .structinstruction {
-	height: 4.5em;
-}
-
-body.phone.portrait div.mathview {
-	overflow-y: scroll;
-}
-
-/*
-body.phone.portrait .zoomed .structinstruction {
-	height: 0;
-	overflow: hidden;
-	-webkit-transition: height 0.6s ease-in-out;
-	-moz-transition: height 0.6s ease-in-out;
-	-o-transition: height 0.6s ease-in-out;
-	transition: height 0.6s ease-in-out;
-}*/
-
-
-
-
-
-body.phone.landscape div.jaxcont {
-	margin-left: 1em;
-}
-
-.wordview .exampleholder {text-align: center;}
-.wordview .objholder {display:inline-block;}
-
-
 .halflings-icon {
 	top: 3px;
 }

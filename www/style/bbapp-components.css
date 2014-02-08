@@ -845,7 +845,8 @@ Displaying maths woo!  :)
 	padding: 3px;
 	border-radius: 3px;
 	color: #333333;
-	display: block;
+	display: inline-block;
+	text-decoration: none;
 }
 
 .mathobj:active {
