@@ -1,7 +1,21 @@
-.explanationsection .horizontalboxcontent .toolexplanation {
-	display: table;
-	width: 100%;
+.aftercontainer.oppartcell {padding-left: 5px;}
+.beforecontainer.oppartcell {padding-right: 5px;}
+
+.exampleholder {
+	text-align:center;
 }
+
+.toolexamplesecond {
+	margin-left: 2px;
+}
+.toolexamplefirst {
+	margin-right: 2px;
+}
+
+.optable {position:relative; text-align: center;}
+.oprow {vertical-align: middle;}
+.arrowhalf {width:10px;}
+.explanationrow {vertical-align:bottom;}
 
 .explanationsection .beforecontainer > div {float:none;}
 .explanationsection .aftercontainer > div {float:none;}
@@ -153,19 +167,13 @@ button.buttonexample {
 	padding-bottom: 1em;
 }
 
-.toolinfo .horizontalboxcontent > .toolexplanation {
-	display: table;
-	width: 100%;
-}
-
-.toolexplanation > div {
+.toolexplanation {
 	display: table-row;
 	position: relative;
 }
 
-.toolexplanation > div > div {
+.toolexplanation > div {
 	display: table-cell;
-	width: 50%;
 	padding: 2px;
 	vertical-align: bottom;
 	text-align: center;
@@ -187,6 +195,8 @@ button.buttonexample {
 	display: inline-block;
 	max-width: 350px;
 	white-space: normal;
+	min-width: 130px;
+	text-align: left;
 }
 
 .toolexampletext:before {

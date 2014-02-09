@@ -106,7 +106,7 @@ body .toggleonbutton {display: none;}
 .collapsed .toolnamecontainer,
 .collapsed .becausecontainer,
 div.collapsed div.buttonstepsbelowcontainer,
-.collapsed .opsection {
+.collapsed .horizontalboxcontent > .opsection {
 	display: none;
 }
 
@@ -139,7 +139,7 @@ div.afternomarkcontainer {display:none;}
 
 /************************ O P E R A T I O N    V I E W *****************************/
 
-.opsection {
+.horizontalboxcontent > .opsection, .opsection {
 	display: table;
 	width: 100%;
 }

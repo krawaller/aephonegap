@@ -790,6 +790,10 @@ Used to display maths. A box with horizontal scrolling.
 .horizontalboxcontent > * {
 	display: inline-block;
 }
+.horizontalboxcontent > table {
+	display: table;
+}
+
 .horizontalbox > .leftsidegradient {
 	background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); 
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); 
