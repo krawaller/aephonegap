@@ -99,8 +99,6 @@ button.schoolbutton {
 	clear: both;
 	display: none;
 	margin: 0 auto;
-	margin-top: 1em;
-	margin-bottom: 1em;
 }
 
 .instructionbox {
@@ -109,7 +107,7 @@ button.schoolbutton {
 
 .lessonbox .lessonlinkholder {
 	text-align: center;
-	margin-top: 2em;
+	clear: both;
 }
 
 .toolinfoyellow .learnbutton, .toolinfogreen .forgetbutton, .toolinfored .cannotlearnbutton, .confirm .forgetconfirmbutton {
