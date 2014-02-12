@@ -13,9 +13,9 @@ display: inline-block;
 	margin: 8em auto;
 }
 
-.worddescription .mathobj {
-	margin-bottom: 1em;
-	margin-top: 1em;
+.wordmathobj {
+	margin: 1em auto;
+	text-align: center;
 }
 
 .textlist {
