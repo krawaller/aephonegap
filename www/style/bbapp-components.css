@@ -278,7 +278,7 @@ All have class .indexedheadline. Used on top of every single view.
 	font-size: 20px;
 	font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	content: "?";
-	color: rgb(114, 36, 216);
+	color: rgb(0, 122, 255);
 }
 
 
@@ -554,7 +554,8 @@ div.davidlist { /* davidlinks are (always?) found insides divs with class .david
 	background-color:inherit;
 	border-radius:0;
 	border: none;
-	font-family: "myfont";
+	font-family: "tuffvid";
+	font-size: 0.9em;
 }
 
 
@@ -562,7 +563,6 @@ div.davidlist { /* davidlinks are (always?) found insides divs with class .david
 .toollink.green:after, .lessonlink.green:after, .mark.green:after {content:"a";}
 .toollink.red:after, .lessonlink.red:after, .mark.red:after {
 	content:"b";
-	font-size: 0.9em; /* locked glyph too big */
 }
 
 /**************************************************************************************************************
@@ -702,10 +702,10 @@ body.phone.landscape .controlbuttontextshort {display: inline;}
 /* -----------------------------------------Active Tab look ------------------------------------------------- */
 
 .tab.active > .mainnavicon {
-	color: rgb(114, 36, 216);
+	color: rgb(0, 122, 255);
 }
 .tab.active > .controlbuttontext {
-	color: rgb(114, 36, 216);
+	color: rgb(0, 122, 255);
 }
 
 
@@ -747,16 +747,16 @@ button.textreportmodeoffbutton {display:none;}
 */
 
 button.btn, button.btn:active, button.btn:hover, button.btn:focus, button.btn.disabled {
-	border-color: rgb(114, 36, 216);
-	color: rgb(114, 36, 216);
+	border-color: rgb(0, 122, 255);
+	color: rgb(0, 122, 255);
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: transparent;
 }
 
 button.btn:active, button.btn.active {
-	border-color: rgb(114, 36, 216);
-	background-color: rgb(114, 36, 216);
+	border-color: rgb(0, 122, 255);
+	background-color: rgb(0, 122, 255);
 	color: white;
 }
 
@@ -854,7 +854,7 @@ Displaying maths woo!  :)
 }
 
 .mathobj:active {
-	background-color:#D5BDFF;
+	background-color:rgb(0, 122, 255);
 }
 
 
@@ -880,6 +880,17 @@ pure text. So no need for the normal Glyphicons :after thing.
 }
 
 @font-face {
+  font-family: "tuffvid";
+  src:url("../fonts/tuffvid.eot");
+  src:url("../fonts/tuffvid.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/tuffvid.woff") format("woff"),
+    url("../fonts/tuffvid.ttf") format("truetype"),
+    url("../fonts/tuffvid.svg#tuffvid") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Glyphicons Regular';
   src: url('../fonts/glyphicons-regular.eot');
   src: url('../fonts/glyphicons-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-regular.woff') format('woff'), url('../fonts/glyphicons-regular.ttf') format('truetype'), url('../fonts/glyphicons-regular.svg#glyphiconsregular') format('svg');
@@ -888,7 +899,7 @@ pure text. So no need for the normal Glyphicons :after thing.
 }
 
 .myicon {
-	font-family: "myfont";
+	font-family: "tuffvid";
 	font-style: normal !important;
 	font-weight: normal !important;
 	font-variant: normal !important;
