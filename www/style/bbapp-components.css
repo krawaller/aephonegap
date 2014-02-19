@@ -673,7 +673,7 @@ body.landscape .controlpanel:after { /* hides border between controlpanel and st
 .mainnavicon {
 	display: block;
 	font-size: 20px;
-	color: #5d5d5d;
+	color: rgb(146,146,146);
 }
 
 body.portrait .tab {
@@ -690,7 +690,7 @@ body.landscape .tab {
 	font-size: 10px;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
-	color: #5d5d5d;
+	color: rgb(146,146,146);
 }
 .controlbuttontextshort {display: none;}
 body.phone.landscape .controlbuttontext {display: none;}
