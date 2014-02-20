@@ -719,7 +719,7 @@ sending a text-related bugreport.
 
 */
 
-.textreportmode .textreport {
+.textreportmode span.reportlink {
 	display: inline-block;
 	border-radius: 4px;
 	background-color: #B94A48;
@@ -737,7 +737,7 @@ sending a text-related bugreport.
 button.textreportmodeoffbutton {display:none;}
 
 
-.textreport { display: none;}
+span.reportlink { display: none;}
 
 /**************************************************************************************************************
 ***************************************************************************************************************
@@ -746,7 +746,8 @@ button.textreportmodeoffbutton {display:none;}
 
 */
 
-button.btn, button.btn:active, button.btn:hover, button.btn:focus, button.btn.disabled {
+button.btn, button.btn:active, button.btn:hover, button.btn:focus, button.btn.disabled,
+a.btn, a.btn:active, a.btn:hover, a.btn:focus, a.btn.disabled {
 	border-color: rgb(0, 122, 255);
 	color: rgb(0, 122, 255);
 	-webkit-box-shadow: none;
@@ -754,13 +755,14 @@ button.btn, button.btn:active, button.btn:hover, button.btn:focus, button.btn.di
 	background-color: transparent;
 }
 
-button.btn:active, button.btn.active {
+button.btn:active, button.btn.active,
+a.btn:active, a.btn.active {
 	border-color: rgb(0, 122, 255);
 	background-color: rgb(0, 122, 255);
 	color: white;
 }
 
-button.btn.btn-xs {
+button.btn.btn-xs,a.btn.btn-xs {
 	padding-top: 3px;
 	padding-bottom: 3px;
 }
