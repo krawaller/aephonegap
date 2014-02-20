@@ -293,3 +293,10 @@ li.nav-header {
 	padding: 3px 15px 3px 30px;
 }
 
+
+.infoholder dd {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 90%;
+	overflow: hidden;
+}

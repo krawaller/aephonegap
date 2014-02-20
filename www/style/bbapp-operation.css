@@ -1,6 +1,4 @@
 
-
-
 .substeps .substeps {
 	padding-bottom: 0;
 }
@@ -106,7 +104,7 @@ body .toggleonbutton {display: none;}
 .collapsed .toolnamecontainer,
 .collapsed .becausecontainer,
 div.collapsed div.buttonstepsbelowcontainer,
-.collapsed .horizontalboxcontent > .opsection {
+.collapsed .horizontalboxcontent > .opsection, .collapsed .reportbox {
 	display: none;
 }
 

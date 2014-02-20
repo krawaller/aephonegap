@@ -728,6 +728,10 @@ sending a text-related bugreport.
 	margin-left: 0.35em;
 }
 
+.indexedheadline .reportlink {
+	line-height: 2.3em;
+}
+
 .textreportmode .textreportmodeonbutton {
 	display: none;
 }
@@ -737,7 +741,18 @@ sending a text-related bugreport.
 button.textreportmodeoffbutton {display:none;}
 
 
-span.reportlink { display: none;}
+span.reportlink, div.collapsed div.reportbox { display: none;}
+
+.textreportmode .reportbox {display: block;margin-top:0;}
+
+.relevanttext {
+	margin-left: 3em;
+	margin-right: 3em;
+	font-style: italic;
+	font-size: 0.9em;
+	text-align: center;
+}
+
 
 /**************************************************************************************************************
 ***************************************************************************************************************
@@ -788,6 +803,7 @@ Used to display maths. A box with horizontal scrolling.
 	overflow-x: auto;
 	padding: 0 15px 1em 15px;
 	white-space: nowrap;
+	text-align: center;
 }
 .horizontalboxcontent > * {
 	display: inline-block;
