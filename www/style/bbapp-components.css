@@ -1167,3 +1167,31 @@ button.newcalcbutton {
 	opacity: 1;
 	visibility: visible;
 }
+
+/**************************************************************************************************************
+***************************************************************************************************************
+
+     L A N G U A G E   S E L E C T
+
+Rules specific to the language select view
+
+*/
+
+.landscape .flagbox img {
+	max-width: 30%;
+	margin: 1em;
+	max-height: 80%;
+}
+
+.portrait .flagbox img {
+	max-height: 30%;
+	display: inline-block;
+	margin: 1em;
+	max-width: 90%;
+}
+
+.flagbox {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
