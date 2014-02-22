@@ -1177,16 +1177,25 @@ Rules specific to the language select view
 
 */
 
-.landscape .flagbox img {
-	max-width: 30%;
+.flagbox img {
 	margin: 1em;
+	display: inline-block;
+	border: 3px solid white;
+	opacity: 0.8;
+}
+
+.flagbox img:active {
+	border-color: rgb(0, 122, 255);
+	opacity: 1;
+}
+
+.landscape .flagbox img {
+	max-width: 50%;
 	max-height: 80%;
 }
 
 .portrait .flagbox img {
-	max-height: 30%;
-	display: inline-block;
-	margin: 1em;
+	max-height: 50%;
 	max-width: 90%;
 }
 
