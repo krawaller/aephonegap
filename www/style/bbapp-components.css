@@ -159,26 +159,33 @@ body.has3dtransforms div.sequence {
 }
 
 body.has3dtransforms div.sequencehiddenleft {
-	-webkit-transition: -webkit-transform 0.4s ease-in-out;
 	-webkit-transform: translate3d(-105%, 0, 0);
-	-moz-transition: -moz-transform 0.4s ease-in-out;
 	-moz-transform: translate3d(-105%, 0, 0);
-	-o-transition: -o-transform 0.4s ease-in-out;
 	-o-transform: translate3d(-105%, 0, 0);
-	transition: transform 0.4s ease-in-out;
 	transform: translate3d(-105%, 0, 0);
 }
 
 body.has3dtransforms div.sequencehiddenright {
-	-webkit-transition: -webkit-transform 0.4s ease-in-out;
 	-webkit-transform: translate3d(105%, 0, 0);
-	-moz-transition: -moz-transform 0.4s ease-in-out;
 	-moz-transform: translate3d(105%, 0, 0);
-	-o-transition: -o-transform 0.4s ease-in-out;
 	-o-transform: translate3d(105%, 0, 0);
-	transition: transform 0.4s ease-in-out;
 	transform: translate3d(105%, 0, 0);
 }
+
+body.has3dtransforms div.viewbox {
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	-moz-transition: -moz-transform 0.4s ease-in-out;
+	-o-transition: -o-transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+}
+
+body.has3dtransforms div.slightlyleft {
+	-webkit-transform: translate3d(-15%, 0, 0);
+	-moz-transform: translate3d(-15%, 0, 0);
+	-o-transform: translate3d(-15%, 0, 0);
+	transform: translate3d(-15%, 0, 0);
+}
+
 
 body.no3dtransforms div.sequence {
 	transition: left 0.4s ease-in-out;
@@ -1242,4 +1249,4 @@ body.focusedtext .introhelptext {
 }
 
 body.focusedtext .viewcontent {top: -12px;}
-body.landscape.focusedtext .viewcontent {top: 0px;}
+body.landscape.focusedtext .viewcontent {top: -6px;}
