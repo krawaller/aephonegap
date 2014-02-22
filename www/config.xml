@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "se.krawaller.algebraexplorer"
         versionCode="10" 
-        version   = "0.12.04">
+        version   = "0.12.05">
 
     <!-- versionCode is optional and Android only -->
 
@@ -24,7 +24,7 @@
     <gap:plugin name="com.phonegap.plugin.statusbar" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
 
-    <preference name="phonegap-version" value="3.1.0" />
+    <preference name="phonegap-version" value="3.3.0" />
     <preference name="orientation" value="default" />
     <preference name="webviewbounce" value="false" />
     <preference name="ios-statusbarstyle" value="black-opaque" />
