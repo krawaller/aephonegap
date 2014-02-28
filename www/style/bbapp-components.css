@@ -65,10 +65,10 @@ These are the classes used in construction of the various views.
 	padding-top: 1em;
 	padding-bottom: 3em;
 	text-align: left;
-	-webkit-transition: top 0.4s ease-in-out;
-	-moz-transition: top 0.4s ease-in-out;
-	-o-transition: top 0.4s ease-in-out;
-	transition: top 0.4s ease-in-out;
+	-webkit-transition: top 0.15s ease-in-out;
+	-moz-transition: top 0.15s ease-in-out;
+	-o-transition: top 0.15s ease-in-out;
+	transition: top 0.15s ease-in-out;
 }
 .viewbox:before {
 	position: absolute;
@@ -251,13 +251,13 @@ All have class .indexedheadline. Used on top of every single view.
 	-moz-box-flex: 1;
 	box-flex: 1;
 	font-weight: 500;
-	webkit-transition: -webkit-transform 0.3s ease-in-out;
+	webkit-transition: -webkit-transform 0.15s ease-in-out;
 	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transition: -moz-transform 0.3s ease-in-out;
+	-moz-transition: -moz-transform 0.15s ease-in-out;
 	-moz-transform: translate3d(0, 0, 0);
-	-o-transition: -o-transform 0.3s ease-in-out;
+	-o-transition: -o-transform 0.15s ease-in-out;
 	-o-transform: translate3d(0, 0, 0);
-	transition: transform 0.3s ease-in-out;
+	transition: transform 0.15s ease-in-out;
 	transform: translate3d(0, 0, 0);
 }
 
@@ -822,7 +822,7 @@ Used to display maths. A box with horizontal scrolling.
 }
 
 .horizontalbox {
-	margin: 0 -10px;
+	margin: 0;
 	position: relative;
 }
 .horizontalboxcontent {
@@ -1186,10 +1186,10 @@ button.newcalcbutton {
 .textclearerbtn > span {top:5px;}
 
 .focusedtext .notempty .textclearerbtn {
-	-webkit-transition: opacity 0.3s ease-in-out;
-	-moz-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
 	opacity: 1;
 	visibility: visible;
 }
