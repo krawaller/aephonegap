@@ -79,6 +79,9 @@ body.usingq .sequence .qheadline {
 .oprest {
 	max-width: 650px;
 }
+.examplelist .oprest {
+	max-width: inherit;
+}
 
 .opbreaker {
 	width: 100%;
