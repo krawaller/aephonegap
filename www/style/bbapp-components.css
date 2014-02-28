@@ -685,6 +685,10 @@ body.landscape .controlpanel:after { /* hides border between controlpanel and st
 	z-index: 11;
 	content: "";
 }
+body.landscape.large .controlpanel:after {
+	left: 64px;
+	height: 43px;
+}
 
 	/* --------------------------------------------- Tab look ------------------------------------------------- */
 
@@ -692,6 +696,10 @@ body.landscape .controlpanel:after { /* hides border between controlpanel and st
 	display: block;
 	font-size: 20px;
 	color: rgb(146,146,146);
+}
+
+.large .mainnavicon {
+	font-size: 30px;
 }
 
 body.portrait .tab {

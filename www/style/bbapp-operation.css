@@ -1,3 +1,10 @@
+.exampleholderouter {
+	text-align: center;
+}
+
+.exampleholderinner {
+	display: inline-block;
+}
 
 .substeps .substeps {
 	padding-bottom: 0;
