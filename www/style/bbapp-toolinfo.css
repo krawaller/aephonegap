@@ -195,6 +195,7 @@ button.buttonexample {
 	white-space: normal;
 	min-width: 130px;
 	text-align: left;
+	display: inline-block;
 }
 
 .toolexampletext:before {

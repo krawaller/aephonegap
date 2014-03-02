@@ -838,7 +838,7 @@ Used to display maths. A box with horizontal scrolling.
 	display: table;
 }
 
-.horizontalbox > .leftsidegradient {
+.horizontalbox  .leftsidegradient {
 	background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); 
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); 
 	background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); 
@@ -856,7 +856,7 @@ Used to display maths. A box with horizontal scrolling.
 	margin: 0;
 	padding: 0;
 }
-.horizontalbox > .rightsidegradient {
+.horizontalbox  .rightsidegradient {
 	background: -moz-linear-gradient(left,  rgba(255,255,255,0.01) 0%, rgba(255,255,255,1) 100%);
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.01)), color-stop(100%,rgba(255,255,255,1)));
 	background: -webkit-linear-gradient(left,  rgba(255,255,255,0.01) 0%,rgba(255,255,255,1) 100%);
