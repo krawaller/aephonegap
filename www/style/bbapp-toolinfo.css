@@ -193,7 +193,7 @@ button.buttonexample {
 	/*display: inline-block;*/
 	max-width: 350px;
 	white-space: normal;
-	min-width: 130px;
+	min-width: 123px;
 	text-align: left;
 	display: inline-block;
 }
