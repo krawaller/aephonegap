@@ -18,18 +18,19 @@ button.abouterrorbutton { /* i info */
 	position: absolute;
 }
 
-.bug1 {
+.errorreport .bug1 {
 	-webkit-transform: rotate(65deg);
 	-moz-transform: rotate(65deg);
 	transform: rotate(65deg);
 	left: -15%;
 	top: 200px;
+	display: inline-block;
 	-webkit-animation: lefttoright 3s linear 3s 1;
     -moz-animation: lefttoright 3s linear 3s 1;
     animation: lefttoright 3s linear 3s 1;
 }
 
-.bug2, .bug3, .bug4, .bug5 {
+.bug1, .bug2, .bug3, .bug4, .bug5 {
 	display: none;
 }
 
