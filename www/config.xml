@@ -28,7 +28,7 @@
     <preference name="phonegap-version" value="3.3.0" />
     <preference name="orientation" value="default" />
     <preference name="webviewbounce" value="false" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="ios-statusbarstyle" value="default" />
     <preference name="fullscreen" value="false" />
     <preference name="target-device" value="universal" />
     <preference name="detect-data-types" value="false" />
