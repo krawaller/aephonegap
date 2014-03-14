@@ -1207,23 +1207,18 @@ Rules specific to the language select view
 .flagbox img {
 	margin: 3em;
 	display: inline-block;
-	border: 3px solid white;
+	/*border: 3px solid white;*/
 	opacity: 0.6;
 }
 
 .flagbox img:active {
-	border-color: rgb(0, 122, 255);
+	/*border-color: rgb(0, 122, 255);*/
 	opacity: 1;
 }
 
-.landscape .flagbox img {
+.flagbox img {
 	max-width: 30%;
 	max-height: 80%;
-}
-
-.portrait .flagbox img {
-	max-height: 50%;
-	max-width: 50%;
 }
 
 .flagbox {

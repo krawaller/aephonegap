@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "se.krawaller.algebraexplorer"
         versionCode="10" 
-        version   = "0.12.05">
+        version   = "0.12.06">
 
     <!-- versionCode is optional and Android only -->
 
@@ -23,6 +23,7 @@
     <gap:plugin name="org.apache.cordova.core.device" />
     <gap:plugin name="com.phonegap.plugin.statusbar" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.keyboard" />
     <!--<gap:plugin name="com.chariotsolutions.cordova.plugin.keyboard_toolbar_remover" />-->
 
     <preference name="phonegap-version" value="3.3.0" />
