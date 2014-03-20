@@ -825,7 +825,7 @@ Used to display maths. A box with horizontal scrolling.
 	margin: 0;
 	position: relative;
 }
-.examplelist .horizontalbox {display:inline-block;}
+.examplelist .horizontalbox {display:inline-block;max-width: 100%;}
 .horizontalboxcontent {
 	overflow-x: auto;
 	padding: 0 15px 1em 15px;
